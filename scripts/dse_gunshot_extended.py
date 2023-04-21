@@ -8,7 +8,7 @@ import os
 import struct
 import json
 import glob
-from tqdm import tqdm
+#from tqdm import tqdm
 import numpy as np
 #import matplotlib.pyplot as plt
 #from matplotlib.pyplot import specgram
@@ -94,7 +94,8 @@ dfExplosion['fold'] = 0
 
 #Agregar en un dataset todos los sonidos de interes con la clase nueva agregada - explosions
 print(urbansound8k.count()[0])
-dfUrbansound8kV2 = urbansound8k.append(dfExplosion)
+dfUrbansound8kV2 = pd.concat([urbansound8k, dfExplosion],)
+#dfUrbansound8kV2 = urbansound8k.append(dfExplosion)
 print("Total Samples", dfUrbansound8kV2.count()[0])
 
 #se toma una muestra aleatoria del tamaño de las muestras de la clase de interes para que quede balanceado
@@ -105,7 +106,8 @@ dfNonGunShot = urbansound8k[urbansound8k['class'] == "non_gun_shot"].sample(n=to
 dfGunShot = urbansound8k[urbansound8k['class'] == "gun_shot"]
 
 #se unen en un solo dataset las clases de interes con muestras balanceadas
-dfComplete = dfNonGunShot.append(dfGunShot)
+dfComplete = pd.concat([dfNonGunShot, dfGunShot],)
+#dfComplete = dfNonGunShot.append(dfGunShot)
 print("Balanced Total Samples", dfComplete.count()[0])
 
 print("Balanced Total Samples GunShot", dfComplete[dfComplete['class'] == "gun_shot"].count()[0])
@@ -238,12 +240,12 @@ testAcc = []
 trainTimes = []
 numberEpochsRan = []
 
-NExp = 1895              #1              #Identificación con número de experimento
+NExp = 1921              #1              #Identificación con número de experimento
 samplerate = 22050
 longitudMaxAudio = 4
-valuesNmfcc = [24]   #[3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45]  #Valores de parametro a variar para el numero de coeficientes MFCC
-valuesNfft = [4096]     #[256, 512, 1024, 2048, 4096] #Valores de parametro a variar para la longitud de la FFT
-valuesWinL = [2048, 4096]      #[256, 512, 1024, 2048, 4096]  #Valores de parametro a variar para el tamaño de ventana, este debe ser menor o igual a NFFT, la función hace padding con 0
+valuesNmfcc = [27]   #[3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45]  #Valores de parametro a variar para el numero de coeficientes MFCC
+valuesNfft = [256, 512, 1024, 2048, 4096]     #[256, 512, 1024, 2048, 4096] #Valores de parametro a variar para la longitud de la FFT
+valuesWinL = [256, 512, 1024, 2048, 4096]      #[256, 512, 1024, 2048, 4096]  #Valores de parametro a variar para el tamaño de ventana, este debe ser menor o igual a NFFT, la función hace padding con 0
 valuesHopL = [0.25, 0.5, 0.75, 1.0]            #[0.25, 0.5, 0.75, 1.0]      #Valores de parametro a variar para el overlaping opuesto de hop_length
 valuesKernelSize = [2, 3, 5, 7]                 #[2, 3, 5, 7] #Valores de parametro de tamaño de kernel a variar dentro del modelo
 
@@ -258,8 +260,8 @@ for Nmfcc in valuesNmfcc:                     #Loop para variar valores del para
       else:
         continue
       for iterableNhopL in valuesHopL:            #Loop para variar valores del parametro Hop_Length => 1/Overlaping
-        if (Nfft==4096 and NwinL==2048 and iterableNhopL<0.5): #or (Nfft==2048 and NwinL==512 and iterableNhopL==0.5):
-          continue
+        #if (Nfft==4096 and NwinL==2048 and iterableNhopL<0.5): #or (Nfft==2048 and NwinL==512 and iterableNhopL==0.5):
+          #continue
         NhopL = int(iterableNhopL*NwinL)
         num_rows = Nmfcc
         num_columns = int(samplerate*longitudMaxAudio/NhopL) + int(samplerate*longitudMaxAudio/NhopL*0.05)  #Calculo longitud de salida de mfcc con 5% de tolerancia para longitud de audios
@@ -281,8 +283,8 @@ for Nmfcc in valuesNmfcc:                     #Loop para variar valores del para
 
         
         for k_size in valuesKernelSize:           #Loop para variar valores del parametro kernel size => Tamaño del kernel de capas convolucionales
-          if (Nfft==4096 and NwinL==2048 and iterableNhopL==0.5 and k_size<=3):
-            continue
+          #if (Nfft==4096 and NwinL==2048 and iterableNhopL==0.5 and k_size<=3):
+            #continue
           models = []
           histories = []
           reports = []
