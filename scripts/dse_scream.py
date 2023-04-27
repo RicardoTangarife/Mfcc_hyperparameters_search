@@ -215,10 +215,10 @@ trainTimes = []
 numberEpochsRan = []
 
 
-NExp = 1              #1              #Identificación con número de experimento
+NExp = 481              #1              #Identificación con número de experimento
 samplerate = 22050
 longitudMaxAudio = 4
-valuesNmfcc = [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45] #[3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45]    #Valores de parametro a variar para el numero de coeficientes MFCC
+valuesNmfcc = [9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45] #[3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45]    #Valores de parametro a variar para el numero de coeficientes MFCC
 valuesNfft = [256, 512, 1024, 2048, 4096]    #[256, 512, 1024, 2048, 4096]   #Valores de parametro a variar para la longitud de la FFT
 valuesWinL = [256, 512, 1024, 2048, 4096]        #[256, 512, 1024, 2048, 4096] #Valores de parametro a variar para el tamaño de ventana, este debe ser menor o igual a NFFT, la función hace padding con 0
 valuesHopL = [0.25, 0.5, 0.75, 1.0]                   #[0.25, 0.5, 0.75, 1.0]   #Valores de parametro a variar para el overlaping opuesto de hop_length
@@ -233,8 +233,8 @@ for Nmfcc in valuesNmfcc:                     #Loop para variar valores del para
       else:
         continue
       for iterableNhopL in valuesHopL:            #Loop para variar valores del parametro Hop_Length => Overlaping
-        #if (Nfft==1024 and NwinL==512 and iterableNhopL==0.25 ) or (Nfft==1024 and NwinL==512 and iterableNhopL==0.5):
-          #continue
+        if (Nfft==2048 and NwinL==256 and iterableNhopL<1.0 ):
+          continue
         NhopL = int(iterableNhopL*NwinL)
         num_rows = Nmfcc
         num_columns = int(samplerate*longitudMaxAudio/NhopL) + int(samplerate*longitudMaxAudio/NhopL*0.05)  #Calculo longitud de salida de mfcc con 5% de tolerancia para longitud de audios
@@ -256,8 +256,8 @@ for Nmfcc in valuesNmfcc:                     #Loop para variar valores del para
 
 
         for k_size in valuesKernelSize:           #Loop para variar valores del parametro kernel size => Tamaño del kernel de capas convolucionales
-          #if (Nfft==512 and NwinL==256 and iterableNhopL==0.25 and k_size<=3) or (Nfft==512 and NwinL==256 and iterableNhopL==0.5 and k_size<=3):
-            #continue
+          if (Nfft==2048 and NwinL==256 and iterableNhopL==1.0 and k_size==2):
+            continue
           models = []
           histories = []
           reports = []
