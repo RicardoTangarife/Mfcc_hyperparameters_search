@@ -26,7 +26,7 @@ tf.get_logger().setLevel('ERROR')   #0| INFO| [Default] Print all messages #1| W
 
 gpus = tf.config.list_physical_devices('GPU')
 print(gpus)
-tf.config.set_visible_devices(gpus[3], 'GPU')
+tf.config.set_visible_devices(gpus[0], 'GPU')
 
 
 seed = 42
@@ -169,7 +169,7 @@ import subprocess
 bashCommand = "nvidia-smi -L"
 process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
 outputGPU, error = process.communicate()
-specGPU = outputGPU.split(b'\n')[3].decode("utf-8")
+specGPU = outputGPU.split(b'\n')[0].decode("utf-8")
 print("SpecsGPU:", specGPU)
 
 def my_grep(pattern, file):

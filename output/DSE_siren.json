@@ -1,5 +1,3304 @@
 {
   "Experiments": [
-    
+    {
+      "Ksize": 2,
+      "NExp": 1,
+      "N_MFCC": 3,
+      "Nfft": 256,
+      "NhopL": 64,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000503",
+      "cmatrixs": [
+        "[[180   0]\n [182  10]]",
+        "[[ 96  84]\n [ 48 144]]",
+        "[[139  41]\n [ 75 117]]",
+        "[[179   1]\n [160  32]]",
+        "[[ 96  84]\n [ 26 166]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.019481",
+      "numberEpochsRan": [
+        13,
+        34,
+        30,
+        11,
+        53
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.50      1.00      0.66       180\n           1       1.00      0.05      0.10       192\n\n    accuracy                           0.51       372\n   macro avg       0.75      0.53      0.38       372\nweighted avg       0.76      0.51      0.37       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.67      0.53      0.59       180\n           1       0.63      0.75      0.69       192\n\n    accuracy                           0.65       372\n   macro avg       0.65      0.64      0.64       372\nweighted avg       0.65      0.65      0.64       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.65      0.77      0.71       180\n           1       0.74      0.61      0.67       192\n\n    accuracy                           0.69       372\n   macro avg       0.70      0.69      0.69       372\nweighted avg       0.70      0.69      0.69       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.53      0.99      0.69       180\n           1       0.97      0.17      0.28       192\n\n    accuracy                           0.57       372\n   macro avg       0.75      0.58      0.49       372\nweighted avg       0.76      0.57      0.48       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.79      0.53      0.64       180\n           1       0.66      0.86      0.75       192\n\n    accuracy                           0.70       372\n   macro avg       0.73      0.70      0.69       372\nweighted avg       0.72      0.70      0.70       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.5107526779174805,
+        0.6451612710952759,
+        0.6881720423698425,
+        0.5672042965888977,
+        0.7043010592460632
+      ],
+      "trainAcc": [
+        0.5464333891868591,
+        0.6736204624176025,
+        0.7139973044395447,
+        0.6170928478240967,
+        0.7382234334945679
+      ],
+      "trainTimes": [
+        "0:00:21.508638",
+        "0:00:49.559501",
+        "0:00:42.417131",
+        "0:00:13.823316",
+        "0:01:18.808322"
+      ]
+    },
+    {
+      "Ksize": 3,
+      "NExp": 2,
+      "N_MFCC": 3,
+      "Nfft": 256,
+      "NhopL": 64,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000569",
+      "cmatrixs": [
+        "[[ 97  83]\n [ 42 150]]",
+        "[[171   9]\n [151  41]]",
+        "[[  0 180]\n [  0 192]]",
+        "[[149  31]\n [ 97  95]]",
+        "[[ 98  82]\n [ 33 159]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.019481",
+      "numberEpochsRan": [
+        57,
+        17,
+        24,
+        44,
+        74
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.70      0.54      0.61       180\n           1       0.64      0.78      0.71       192\n\n    accuracy                           0.66       372\n   macro avg       0.67      0.66      0.66       372\nweighted avg       0.67      0.66      0.66       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.53      0.95      0.68       180\n           1       0.82      0.21      0.34       192\n\n    accuracy                           0.57       372\n   macro avg       0.68      0.58      0.51       372\nweighted avg       0.68      0.57      0.50       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.00      0.00      0.00       180\n           1       0.52      1.00      0.68       192\n\n    accuracy                           0.52       372\n   macro avg       0.26      0.50      0.34       372\nweighted avg       0.27      0.52      0.35       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.61      0.83      0.70       180\n           1       0.75      0.49      0.60       192\n\n    accuracy                           0.66       372\n   macro avg       0.68      0.66      0.65       372\nweighted avg       0.68      0.66      0.65       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.75      0.54      0.63       180\n           1       0.66      0.83      0.73       192\n\n    accuracy                           0.69       372\n   macro avg       0.70      0.69      0.68       372\nweighted avg       0.70      0.69      0.68       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.6639785170555115,
+        0.5698924660682678,
+        0.5161290168762207,
+        0.6559139490127563,
+        0.6908602118492126
+      ],
+      "trainAcc": [
+        0.6796770095825195,
+        0.6453566551208496,
+        0.49596232175827026,
+        0.7288021445274353,
+        0.7106325626373291
+      ],
+      "trainTimes": [
+        "0:01:36.605802",
+        "0:00:25.370397",
+        "0:00:33.304117",
+        "0:01:04.331512",
+        "0:01:55.605602"
+      ]
+    },
+    {
+      "Ksize": 5,
+      "NExp": 3,
+      "N_MFCC": 3,
+      "Nfft": 256,
+      "NhopL": 64,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000739",
+      "cmatrixs": [
+        "[[140  40]\n [ 73 119]]",
+        "[[141  39]\n [ 68 124]]",
+        "[[126  54]\n [ 49 143]]",
+        "[[ 88  92]\n [ 24 168]]",
+        "[[112  68]\n [ 29 163]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.019481",
+      "numberEpochsRan": [
+        33,
+        44,
+        44,
+        62,
+        80
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.66      0.78      0.71       180\n           1       0.75      0.62      0.68       192\n\n    accuracy                           0.70       372\n   macro avg       0.70      0.70      0.70       372\nweighted avg       0.70      0.70      0.69       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.67      0.78      0.72       180\n           1       0.76      0.65      0.70       192\n\n    accuracy                           0.71       372\n   macro avg       0.72      0.71      0.71       372\nweighted avg       0.72      0.71      0.71       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.72      0.70      0.71       180\n           1       0.73      0.74      0.74       192\n\n    accuracy                           0.72       372\n   macro avg       0.72      0.72      0.72       372\nweighted avg       0.72      0.72      0.72       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.79      0.49      0.60       180\n           1       0.65      0.88      0.74       192\n\n    accuracy                           0.69       372\n   macro avg       0.72      0.68      0.67       372\nweighted avg       0.71      0.69      0.68       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.79      0.62      0.70       180\n           1       0.71      0.85      0.77       192\n\n    accuracy                           0.74       372\n   macro avg       0.75      0.74      0.73       372\nweighted avg       0.75      0.74      0.74       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.6962365508079529,
+        0.7123655676841736,
+        0.7231183052062988,
+        0.6881720423698425,
+        0.7392473220825195
+      ],
+      "trainAcc": [
+        0.7476446628570557,
+        0.7395693063735962,
+        0.7436069846153259,
+        0.6917900443077087,
+        0.7496635317802429
+      ],
+      "trainTimes": [
+        "0:01:29.172732",
+        "0:01:44.071359",
+        "0:01:45.931531",
+        "0:02:20.255786",
+        "0:03:08.680352"
+      ]
+    },
+    {
+      "Ksize": 7,
+      "NExp": 4,
+      "N_MFCC": 3,
+      "Nfft": 256,
+      "NhopL": 64,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.001019",
+      "cmatrixs": [
+        "[[121  59]\n [ 44 148]]",
+        "[[138  42]\n [ 77 115]]",
+        "[[110  70]\n [ 34 158]]",
+        "[[  0 180]\n [  0 192]]",
+        "[[128  52]\n [ 58 134]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.019481",
+      "numberEpochsRan": [
+        32,
+        25,
+        80,
+        31,
+        18
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.73      0.67      0.70       180\n           1       0.71      0.77      0.74       192\n\n    accuracy                           0.72       372\n   macro avg       0.72      0.72      0.72       372\nweighted avg       0.72      0.72      0.72       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.64      0.77      0.70       180\n           1       0.73      0.60      0.66       192\n\n    accuracy                           0.68       372\n   macro avg       0.69      0.68      0.68       372\nweighted avg       0.69      0.68      0.68       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.76      0.61      0.68       180\n           1       0.69      0.82      0.75       192\n\n    accuracy                           0.72       372\n   macro avg       0.73      0.72      0.72       372\nweighted avg       0.73      0.72      0.72       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.00      0.00      0.00       180\n           1       0.52      1.00      0.68       192\n\n    accuracy                           0.52       372\n   macro avg       0.26      0.50      0.34       372\nweighted avg       0.27      0.52      0.35       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.69      0.71      0.70       180\n           1       0.72      0.70      0.71       192\n\n    accuracy                           0.70       372\n   macro avg       0.70      0.70      0.70       372\nweighted avg       0.70      0.70      0.70       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.7231183052062988,
+        0.6801075339317322,
+        0.7204301357269287,
+        0.5161290168762207,
+        0.7043010592460632
+      ],
+      "trainAcc": [
+        0.7456258535385132,
+        0.7281292080879211,
+        0.7341857552528381,
+        0.49596232175827026,
+        0.7483176589012146
+      ],
+      "trainTimes": [
+        "0:02:12.801198",
+        "0:01:33.573375",
+        "0:04:51.576066",
+        "0:01:53.487122",
+        "0:01:07.254375"
+      ]
+    },
+    {
+      "Ksize": 2,
+      "NExp": 5,
+      "N_MFCC": 3,
+      "Nfft": 256,
+      "NhopL": 128,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000425",
+      "cmatrixs": [
+        "[[171   9]\n [141  51]]",
+        "[[148  32]\n [170  22]]",
+        "[[158  22]\n [126  66]]",
+        "[[ 26 154]\n [  3 189]]",
+        "[[ 90  90]\n [ 24 168]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.014311",
+      "numberEpochsRan": [
+        18,
+        13,
+        21,
+        40,
+        80
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.55      0.95      0.70       180\n           1       0.85      0.27      0.40       192\n\n    accuracy                           0.60       372\n   macro avg       0.70      0.61      0.55       372\nweighted avg       0.70      0.60      0.55       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.47      0.82      0.59       180\n           1       0.41      0.11      0.18       192\n\n    accuracy                           0.46       372\n   macro avg       0.44      0.47      0.39       372\nweighted avg       0.44      0.46      0.38       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.56      0.88      0.68       180\n           1       0.75      0.34      0.47       192\n\n    accuracy                           0.60       372\n   macro avg       0.65      0.61      0.58       372\nweighted avg       0.66      0.60      0.57       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.90      0.14      0.25       180\n           1       0.55      0.98      0.71       192\n\n    accuracy                           0.58       372\n   macro avg       0.72      0.56      0.48       372\nweighted avg       0.72      0.58      0.49       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.79      0.50      0.61       180\n           1       0.65      0.88      0.75       192\n\n    accuracy                           0.69       372\n   macro avg       0.72      0.69      0.68       372\nweighted avg       0.72      0.69      0.68       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.5967742204666138,
+        0.45698925852775574,
+        0.602150559425354,
+        0.5779569745063782,
+        0.6935483813285828
+      ],
+      "trainAcc": [
+        0.6628533005714417,
+        0.4986540973186493,
+        0.6716015934944153,
+        0.5296096801757812,
+        0.703903079032898
+      ],
+      "trainTimes": [
+        "0:00:22.696666",
+        "0:00:11.458505",
+        "0:00:19.866763",
+        "0:00:39.844635",
+        "0:01:08.412132"
+      ]
+    },
+    {
+      "Ksize": 3,
+      "NExp": 6,
+      "N_MFCC": 3,
+      "Nfft": 256,
+      "NhopL": 128,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000465",
+      "cmatrixs": [
+        "[[175   5]\n [159  33]]",
+        "[[108  72]\n [ 45 147]]",
+        "[[141  39]\n [ 81 111]]",
+        "[[138  42]\n [ 78 114]]",
+        "[[110  70]\n [ 40 152]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.014311",
+      "numberEpochsRan": [
+        13,
+        41,
+        41,
+        38,
+        34
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.52      0.97      0.68       180\n           1       0.87      0.17      0.29       192\n\n    accuracy                           0.56       372\n   macro avg       0.70      0.57      0.48       372\nweighted avg       0.70      0.56      0.48       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.71      0.60      0.65       180\n           1       0.67      0.77      0.72       192\n\n    accuracy                           0.69       372\n   macro avg       0.69      0.68      0.68       372\nweighted avg       0.69      0.69      0.68       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.64      0.78      0.70       180\n           1       0.74      0.58      0.65       192\n\n    accuracy                           0.68       372\n   macro avg       0.69      0.68      0.68       372\nweighted avg       0.69      0.68      0.67       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.64      0.77      0.70       180\n           1       0.73      0.59      0.66       192\n\n    accuracy                           0.68       372\n   macro avg       0.68      0.68      0.68       372\nweighted avg       0.69      0.68      0.68       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.73      0.61      0.67       180\n           1       0.68      0.79      0.73       192\n\n    accuracy                           0.70       372\n   macro avg       0.71      0.70      0.70       372\nweighted avg       0.71      0.70      0.70       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.5591397881507874,
+        0.6854838728904724,
+        0.6774193644523621,
+        0.6774193644523621,
+        0.7043010592460632
+      ],
+      "trainAcc": [
+        0.6265141367912292,
+        0.7166891098022461,
+        0.7362045645713806,
+        0.7267833352088928,
+        0.7126514315605164
+      ],
+      "trainTimes": [
+        "0:00:17.899829",
+        "0:00:40.395866",
+        "0:00:41.398828",
+        "0:00:36.576241",
+        "0:00:40.336871"
+      ]
+    },
+    {
+      "Ksize": 5,
+      "NExp": 7,
+      "N_MFCC": 3,
+      "Nfft": 256,
+      "NhopL": 128,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000558",
+      "cmatrixs": [
+        "[[145  35]\n [ 72 120]]",
+        "[[136  44]\n [ 52 140]]",
+        "[[ 88  92]\n [ 22 170]]",
+        "[[153  27]\n [ 96  96]]",
+        "[[122  58]\n [ 37 155]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.014311",
+      "numberEpochsRan": [
+        52,
+        80,
+        37,
+        25,
+        63
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.67      0.81      0.73       180\n           1       0.77      0.62      0.69       192\n\n    accuracy                           0.71       372\n   macro avg       0.72      0.72      0.71       372\nweighted avg       0.72      0.71      0.71       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.72      0.76      0.74       180\n           1       0.76      0.73      0.74       192\n\n    accuracy                           0.74       372\n   macro avg       0.74      0.74      0.74       372\nweighted avg       0.74      0.74      0.74       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.80      0.49      0.61       180\n           1       0.65      0.89      0.75       192\n\n    accuracy                           0.69       372\n   macro avg       0.72      0.69      0.68       372\nweighted avg       0.72      0.69      0.68       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.61      0.85      0.71       180\n           1       0.78      0.50      0.61       192\n\n    accuracy                           0.67       372\n   macro avg       0.70      0.68      0.66       372\nweighted avg       0.70      0.67      0.66       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.77      0.68      0.72       180\n           1       0.73      0.81      0.77       192\n\n    accuracy                           0.74       372\n   macro avg       0.75      0.74      0.74       372\nweighted avg       0.75      0.74      0.74       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.7123655676841736,
+        0.7419354915618896,
+        0.6935483813285828,
+        0.6693548560142517,
+        0.7446236610412598
+      ],
+      "trainAcc": [
+        0.7476446628570557,
+        0.784656822681427,
+        0.6951547861099243,
+        0.7355316281318665,
+        0.7658142447471619
+      ],
+      "trainTimes": [
+        "0:01:19.749957",
+        "0:01:56.097615",
+        "0:00:57.385765",
+        "0:00:37.459160",
+        "0:01:25.193465"
+      ]
+    },
+    {
+      "Ksize": 7,
+      "NExp": 8,
+      "N_MFCC": 3,
+      "Nfft": 256,
+      "NhopL": 128,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000703",
+      "cmatrixs": [
+        "[[148  32]\n [ 99  93]]",
+        "[[128  52]\n [ 62 130]]",
+        "[[147  33]\n [ 82 110]]",
+        "[[150  30]\n [ 93  99]]",
+        "[[145  35]\n [ 96  96]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.014311",
+      "numberEpochsRan": [
+        39,
+        25,
+        37,
+        37,
+        40
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.60      0.82      0.69       180\n           1       0.74      0.48      0.59       192\n\n    accuracy                           0.65       372\n   macro avg       0.67      0.65      0.64       372\nweighted avg       0.67      0.65      0.64       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.67      0.71      0.69       180\n           1       0.71      0.68      0.70       192\n\n    accuracy                           0.69       372\n   macro avg       0.69      0.69      0.69       372\nweighted avg       0.69      0.69      0.69       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.64      0.82      0.72       180\n           1       0.77      0.57      0.66       192\n\n    accuracy                           0.69       372\n   macro avg       0.71      0.69      0.69       372\nweighted avg       0.71      0.69      0.69       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.62      0.83      0.71       180\n           1       0.77      0.52      0.62       192\n\n    accuracy                           0.67       372\n   macro avg       0.69      0.67      0.66       372\nweighted avg       0.69      0.67      0.66       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.60      0.81      0.69       180\n           1       0.73      0.50      0.59       192\n\n    accuracy                           0.65       372\n   macro avg       0.67      0.65      0.64       372\nweighted avg       0.67      0.65      0.64       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.647849440574646,
+        0.6935483813285828,
+        0.6908602118492126,
+        0.6693548560142517,
+        0.647849440574646
+      ],
+      "trainAcc": [
+        0.7240915298461914,
+        0.7314939498901367,
+        0.7294750809669495,
+        0.7308210134506226,
+        0.7314939498901367
+      ],
+      "trainTimes": [
+        "0:01:30.812993",
+        "0:00:54.591937",
+        "0:01:15.951184",
+        "0:01:17.955643",
+        "0:01:32.657682"
+      ]
+    },
+    {
+      "Ksize": 2,
+      "NExp": 9,
+      "N_MFCC": 3,
+      "Nfft": 256,
+      "NhopL": 192,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000400",
+      "cmatrixs": [
+        "[[ 90  90]\n [ 49 143]]",
+        "[[168  12]\n [151  41]]",
+        "[[144  36]\n [ 84 108]]",
+        "[[107  73]\n [ 68 124]]",
+        "[[162  18]\n [126  66]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.012500",
+      "numberEpochsRan": [
+        25,
+        18,
+        41,
+        46,
+        29
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.65      0.50      0.56       180\n           1       0.61      0.74      0.67       192\n\n    accuracy                           0.63       372\n   macro avg       0.63      0.62      0.62       372\nweighted avg       0.63      0.63      0.62       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.53      0.93      0.67       180\n           1       0.77      0.21      0.33       192\n\n    accuracy                           0.56       372\n   macro avg       0.65      0.57      0.50       372\nweighted avg       0.65      0.56      0.50       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.63      0.80      0.71       180\n           1       0.75      0.56      0.64       192\n\n    accuracy                           0.68       372\n   macro avg       0.69      0.68      0.67       372\nweighted avg       0.69      0.68      0.67       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.61      0.59      0.60       180\n           1       0.63      0.65      0.64       192\n\n    accuracy                           0.62       372\n   macro avg       0.62      0.62      0.62       372\nweighted avg       0.62      0.62      0.62       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.56      0.90      0.69       180\n           1       0.79      0.34      0.48       192\n\n    accuracy                           0.61       372\n   macro avg       0.67      0.62      0.59       372\nweighted avg       0.68      0.61      0.58       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.6263440847396851,
+        0.5618279576301575,
+        0.6774193644523621,
+        0.6209677457809448,
+        0.6129032373428345
+      ],
+      "trainAcc": [
+        0.6514132022857666,
+        0.6433378458023071,
+        0.7193809151649475,
+        0.6567967534065247,
+        0.6695827841758728
+      ],
+      "trainTimes": [
+        "0:00:26.508697",
+        "0:00:14.381278",
+        "0:00:27.230556",
+        "0:00:41.242860",
+        "0:00:19.433556"
+      ]
+    },
+    {
+      "Ksize": 3,
+      "NExp": 10,
+      "N_MFCC": 3,
+      "Nfft": 256,
+      "NhopL": 192,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000405",
+      "cmatrixs": [
+        "[[124  56]\n [ 56 136]]",
+        "[[169  11]\n [144  48]]",
+        "[[135  45]\n [ 69 123]]",
+        "[[130  50]\n [ 73 119]]",
+        "[[ 84  96]\n [ 80 112]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.012500",
+      "numberEpochsRan": [
+        62,
+        18,
+        23,
+        34,
+        43
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.69      0.69      0.69       180\n           1       0.71      0.71      0.71       192\n\n    accuracy                           0.70       372\n   macro avg       0.70      0.70      0.70       372\nweighted avg       0.70      0.70      0.70       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.54      0.94      0.69       180\n           1       0.81      0.25      0.38       192\n\n    accuracy                           0.58       372\n   macro avg       0.68      0.59      0.53       372\nweighted avg       0.68      0.58      0.53       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.66      0.75      0.70       180\n           1       0.73      0.64      0.68       192\n\n    accuracy                           0.69       372\n   macro avg       0.70      0.70      0.69       372\nweighted avg       0.70      0.69      0.69       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.64      0.72      0.68       180\n           1       0.70      0.62      0.66       192\n\n    accuracy                           0.67       372\n   macro avg       0.67      0.67      0.67       372\nweighted avg       0.67      0.67      0.67       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.51      0.47      0.49       180\n           1       0.54      0.58      0.56       192\n\n    accuracy                           0.53       372\n   macro avg       0.53      0.53      0.52       372\nweighted avg       0.53      0.53      0.53       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.698924720287323,
+        0.5833333134651184,
+        0.6935483813285828,
+        0.6693548560142517,
+        0.5268816947937012
+      ],
+      "trainAcc": [
+        0.7415881752967834,
+        0.6507402658462524,
+        0.7402422428131104,
+        0.7375504970550537,
+        0.6117092967033386
+      ],
+      "trainTimes": [
+        "0:00:56.210487",
+        "0:00:15.619832",
+        "0:00:19.407734",
+        "0:00:32.197508",
+        "0:00:34.021773"
+      ]
+    },
+    {
+      "Ksize": 5,
+      "NExp": 11,
+      "N_MFCC": 3,
+      "Nfft": 256,
+      "NhopL": 192,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000518",
+      "cmatrixs": [
+        "[[133  47]\n [ 56 136]]",
+        "[[126  54]\n [ 41 151]]",
+        "[[133  47]\n [ 51 141]]",
+        "[[ 48 132]\n [ 13 179]]",
+        "[[101  79]\n [ 29 163]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.012500",
+      "numberEpochsRan": [
+        34,
+        76,
+        25,
+        32,
+        56
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.70      0.74      0.72       180\n           1       0.74      0.71      0.73       192\n\n    accuracy                           0.72       372\n   macro avg       0.72      0.72      0.72       372\nweighted avg       0.72      0.72      0.72       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.75      0.70      0.73       180\n           1       0.74      0.79      0.76       192\n\n    accuracy                           0.74       372\n   macro avg       0.75      0.74      0.74       372\nweighted avg       0.75      0.74      0.74       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.72      0.74      0.73       180\n           1       0.75      0.73      0.74       192\n\n    accuracy                           0.74       372\n   macro avg       0.74      0.74      0.74       372\nweighted avg       0.74      0.74      0.74       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.79      0.27      0.40       180\n           1       0.58      0.93      0.71       192\n\n    accuracy                           0.61       372\n   macro avg       0.68      0.60      0.56       372\nweighted avg       0.68      0.61      0.56       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.78      0.56      0.65       180\n           1       0.67      0.85      0.75       192\n\n    accuracy                           0.71       372\n   macro avg       0.73      0.71      0.70       372\nweighted avg       0.72      0.71      0.70       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.7231183052062988,
+        0.7446236610412598,
+        0.7365591526031494,
+        0.6102150678634644,
+        0.7096773982048035
+      ],
+      "trainAcc": [
+        0.7409151792526245,
+        0.7819650173187256,
+        0.7617765665054321,
+        0.6278600096702576,
+        0.7126514315605164
+      ],
+      "trainTimes": [
+        "0:00:48.737463",
+        "0:01:23.767566",
+        "0:00:28.769654",
+        "0:00:37.653040",
+        "0:01:02.672353"
+      ]
+    },
+    {
+      "Ksize": 7,
+      "NExp": 12,
+      "N_MFCC": 3,
+      "Nfft": 256,
+      "NhopL": 192,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000609",
+      "cmatrixs": [
+        "[[144  36]\n [ 74 118]]",
+        "[[142  38]\n [ 84 108]]",
+        "[[102  78]\n [ 34 158]]",
+        "[[141  39]\n [ 79 113]]",
+        "[[149  31]\n [ 83 109]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.012500",
+      "numberEpochsRan": [
+        39,
+        37,
+        34,
+        57,
+        66
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.66      0.80      0.72       180\n           1       0.77      0.61      0.68       192\n\n    accuracy                           0.70       372\n   macro avg       0.71      0.71      0.70       372\nweighted avg       0.72      0.70      0.70       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.63      0.79      0.70       180\n           1       0.74      0.56      0.64       192\n\n    accuracy                           0.67       372\n   macro avg       0.68      0.68      0.67       372\nweighted avg       0.69      0.67      0.67       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.75      0.57      0.65       180\n           1       0.67      0.82      0.74       192\n\n    accuracy                           0.70       372\n   macro avg       0.71      0.69      0.69       372\nweighted avg       0.71      0.70      0.69       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.64      0.78      0.70       180\n           1       0.74      0.59      0.66       192\n\n    accuracy                           0.68       372\n   macro avg       0.69      0.69      0.68       372\nweighted avg       0.69      0.68      0.68       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.64      0.83      0.72       180\n           1       0.78      0.57      0.66       192\n\n    accuracy                           0.69       372\n   macro avg       0.71      0.70      0.69       372\nweighted avg       0.71      0.69      0.69       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.7043010592460632,
+        0.6720430254936218,
+        0.698924720287323,
+        0.6827957034111023,
+        0.6935483813285828
+      ],
+      "trainAcc": [
+        0.7436069846153259,
+        0.7375504970550537,
+        0.7086137533187866,
+        0.7483176589012146,
+        0.7537012100219727
+      ],
+      "trainTimes": [
+        "0:01:08.208632",
+        "0:00:59.987247",
+        "0:00:52.116811",
+        "0:01:25.043848",
+        "0:01:39.969748"
+      ]
+    },
+    {
+      "Ksize": 2,
+      "NExp": 13,
+      "N_MFCC": 3,
+      "Nfft": 256,
+      "NhopL": 256,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000387",
+      "cmatrixs": [
+        "[[144  36]\n [ 84 108]]",
+        "[[ 78 102]\n [ 31 161]]",
+        "[[162  18]\n [122  70]]",
+        "[[129  51]\n [ 62 130]]",
+        "[[ 73 107]\n [ 20 172]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.010173",
+      "numberEpochsRan": [
+        29,
+        45,
+        28,
+        63,
+        30
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.63      0.80      0.71       180\n           1       0.75      0.56      0.64       192\n\n    accuracy                           0.68       372\n   macro avg       0.69      0.68      0.67       372\nweighted avg       0.69      0.68      0.67       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.72      0.43      0.54       180\n           1       0.61      0.84      0.71       192\n\n    accuracy                           0.64       372\n   macro avg       0.66      0.64      0.62       372\nweighted avg       0.66      0.64      0.63       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.57      0.90      0.70       180\n           1       0.80      0.36      0.50       192\n\n    accuracy                           0.62       372\n   macro avg       0.68      0.63      0.60       372\nweighted avg       0.69      0.62      0.60       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.68      0.72      0.70       180\n           1       0.72      0.68      0.70       192\n\n    accuracy                           0.70       372\n   macro avg       0.70      0.70      0.70       372\nweighted avg       0.70      0.70      0.70       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.78      0.41      0.53       180\n           1       0.62      0.90      0.73       192\n\n    accuracy                           0.66       372\n   macro avg       0.70      0.65      0.63       372\nweighted avg       0.70      0.66      0.64       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.6774193644523621,
+        0.6424731016159058,
+        0.6236559152603149,
+        0.6962365508079529,
+        0.6586021780967712
+      ],
+      "trainAcc": [
+        0.7227455973625183,
+        0.6278600096702576,
+        0.705249011516571,
+        0.7261103391647339,
+        0.648048460483551
+      ],
+      "trainTimes": [
+        "0:00:25.403724",
+        "0:00:32.581450",
+        "0:00:17.946141",
+        "0:00:51.531848",
+        "0:00:18.936972"
+      ]
+    },
+    {
+      "Ksize": 3,
+      "NExp": 14,
+      "N_MFCC": 3,
+      "Nfft": 256,
+      "NhopL": 256,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000405",
+      "cmatrixs": [
+        "[[114  66]\n [ 66 126]]",
+        "[[ 78 102]\n [ 22 170]]",
+        "[[  0 180]\n [  0 192]]",
+        "[[ 61 119]\n [ 63 129]]",
+        "[[169  11]\n [138  54]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.010173",
+      "numberEpochsRan": [
+        41,
+        27,
+        30,
+        33,
+        19
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.63      0.63      0.63       180\n           1       0.66      0.66      0.66       192\n\n    accuracy                           0.65       372\n   macro avg       0.64      0.64      0.64       372\nweighted avg       0.65      0.65      0.65       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.78      0.43      0.56       180\n           1       0.62      0.89      0.73       192\n\n    accuracy                           0.67       372\n   macro avg       0.70      0.66      0.64       372\nweighted avg       0.70      0.67      0.65       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.00      0.00      0.00       180\n           1       0.52      1.00      0.68       192\n\n    accuracy                           0.52       372\n   macro avg       0.26      0.50      0.34       372\nweighted avg       0.27      0.52      0.35       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.49      0.34      0.40       180\n           1       0.52      0.67      0.59       192\n\n    accuracy                           0.51       372\n   macro avg       0.51      0.51      0.49       372\nweighted avg       0.51      0.51      0.50       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.55      0.94      0.69       180\n           1       0.83      0.28      0.42       192\n\n    accuracy                           0.60       372\n   macro avg       0.69      0.61      0.56       372\nweighted avg       0.70      0.60      0.55       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.6451612710952759,
+        0.6666666865348816,
+        0.5161290168762207,
+        0.5107526779174805,
+        0.5994623899459839
+      ],
+      "trainAcc": [
+        0.6601614952087402,
+        0.6453566551208496,
+        0.49596232175827026,
+        0.5659488439559937,
+        0.6655451059341431
+      ],
+      "trainTimes": [
+        "0:00:37.203342",
+        "0:00:21.631288",
+        "0:00:21.599936",
+        "0:00:27.633514",
+        "0:00:15.064139"
+      ]
+    },
+    {
+      "Ksize": 5,
+      "NExp": 15,
+      "N_MFCC": 3,
+      "Nfft": 256,
+      "NhopL": 256,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000473",
+      "cmatrixs": [
+        "[[ 43 137]\n [ 10 182]]",
+        "[[136  44]\n [ 69 123]]",
+        "[[163  17]\n [122  70]]",
+        "[[177   3]\n [170  22]]",
+        "[[132  48]\n [ 67 125]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.010173",
+      "numberEpochsRan": [
+        34,
+        44,
+        29,
+        15,
+        36
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.81      0.24      0.37       180\n           1       0.57      0.95      0.71       192\n\n    accuracy                           0.60       372\n   macro avg       0.69      0.59      0.54       372\nweighted avg       0.69      0.60      0.55       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.66      0.76      0.71       180\n           1       0.74      0.64      0.69       192\n\n    accuracy                           0.70       372\n   macro avg       0.70      0.70      0.70       372\nweighted avg       0.70      0.70      0.70       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.57      0.91      0.70       180\n           1       0.80      0.36      0.50       192\n\n    accuracy                           0.63       372\n   macro avg       0.69      0.64      0.60       372\nweighted avg       0.69      0.63      0.60       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.51      0.98      0.67       180\n           1       0.88      0.11      0.20       192\n\n    accuracy                           0.53       372\n   macro avg       0.70      0.55      0.44       372\nweighted avg       0.70      0.53      0.43       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.66      0.73      0.70       180\n           1       0.72      0.65      0.68       192\n\n    accuracy                           0.69       372\n   macro avg       0.69      0.69      0.69       372\nweighted avg       0.69      0.69      0.69       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.6048387289047241,
+        0.6962365508079529,
+        0.6263440847396851,
+        0.5349462628364563,
+        0.6908602118492126
+      ],
+      "trainAcc": [
+        0.5948855876922607,
+        0.7563930153846741,
+        0.6971735954284668,
+        0.5989232659339905,
+        0.7301480770111084
+      ],
+      "trainTimes": [
+        "0:00:41.827489",
+        "0:00:39.621980",
+        "0:00:29.659984",
+        "0:00:13.037289",
+        "0:00:32.592267"
+      ]
+    },
+    {
+      "Ksize": 7,
+      "NExp": 16,
+      "N_MFCC": 3,
+      "Nfft": 256,
+      "NhopL": 256,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000573",
+      "cmatrixs": [
+        "[[147  33]\n [ 98  94]]",
+        "[[159  21]\n [116  76]]",
+        "[[144  36]\n [106  86]]",
+        "[[143  37]\n [ 87 105]]",
+        "[[134  46]\n [ 77 115]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.010173",
+      "numberEpochsRan": [
+        39,
+        41,
+        21,
+        40,
+        40
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.60      0.82      0.69       180\n           1       0.74      0.49      0.59       192\n\n    accuracy                           0.65       372\n   macro avg       0.67      0.65      0.64       372\nweighted avg       0.67      0.65      0.64       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.58      0.88      0.70       180\n           1       0.78      0.40      0.53       192\n\n    accuracy                           0.63       372\n   macro avg       0.68      0.64      0.61       372\nweighted avg       0.68      0.63      0.61       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.58      0.80      0.67       180\n           1       0.70      0.45      0.55       192\n\n    accuracy                           0.62       372\n   macro avg       0.64      0.62      0.61       372\nweighted avg       0.64      0.62      0.61       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.62      0.79      0.70       180\n           1       0.74      0.55      0.63       192\n\n    accuracy                           0.67       372\n   macro avg       0.68      0.67      0.66       372\nweighted avg       0.68      0.67      0.66       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.64      0.74      0.69       180\n           1       0.71      0.60      0.65       192\n\n    accuracy                           0.67       372\n   macro avg       0.67      0.67      0.67       372\nweighted avg       0.68      0.67      0.67       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.647849440574646,
+        0.6317204236984253,
+        0.6182795763015747,
+        0.6666666865348816,
+        0.6693548560142517
+      ],
+      "trainAcc": [
+        0.72139972448349,
+        0.7092866897583008,
+        0.6843876242637634,
+        0.732839822769165,
+        0.7436069846153259
+      ],
+      "trainTimes": [
+        "0:00:58.093232",
+        "0:00:56.120868",
+        "0:00:26.565792",
+        "0:00:52.978510",
+        "0:00:51.854543"
+      ]
+    },
+    {
+      "Ksize": 2,
+      "NExp": 17,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 64,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000506",
+      "cmatrixs": [
+        "[[178   2]\n [177  15]]",
+        "[[177   3]\n [157  35]]",
+        "[[127  53]\n [ 80 112]]",
+        "[[166  14]\n [121  71]]",
+        "[[148  32]\n [126  66]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.025440",
+      "numberEpochsRan": [
+        12,
+        15,
+        36,
+        22,
+        15
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.50      0.99      0.67       180\n           1       0.88      0.08      0.14       192\n\n    accuracy                           0.52       372\n   macro avg       0.69      0.53      0.40       372\nweighted avg       0.70      0.52      0.40       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.53      0.98      0.69       180\n           1       0.92      0.18      0.30       192\n\n    accuracy                           0.57       372\n   macro avg       0.73      0.58      0.50       372\nweighted avg       0.73      0.57      0.49       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.61      0.71      0.66       180\n           1       0.68      0.58      0.63       192\n\n    accuracy                           0.64       372\n   macro avg       0.65      0.64      0.64       372\nweighted avg       0.65      0.64      0.64       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.58      0.92      0.71       180\n           1       0.84      0.37      0.51       192\n\n    accuracy                           0.64       372\n   macro avg       0.71      0.65      0.61       372\nweighted avg       0.71      0.64      0.61       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.54      0.82      0.65       180\n           1       0.67      0.34      0.46       192\n\n    accuracy                           0.58       372\n   macro avg       0.61      0.58      0.55       372\nweighted avg       0.61      0.58      0.55       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.5188171863555908,
+        0.5698924660682678,
+        0.6424731016159058,
+        0.6370967626571655,
+        0.5752688050270081
+      ],
+      "trainAcc": [
+        0.5524898767471313,
+        0.584791362285614,
+        0.6830417513847351,
+        0.6668909788131714,
+        0.590847909450531
+      ],
+      "trainTimes": [
+        "0:00:15.526462",
+        "0:00:19.526940",
+        "0:00:48.390574",
+        "0:00:29.641882",
+        "0:00:20.469581"
+      ]
+    },
+    {
+      "Ksize": 3,
+      "NExp": 18,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 64,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000555",
+      "cmatrixs": [
+        "[[ 86  94]\n [ 20 172]]",
+        "[[ 84  96]\n [ 17 175]]",
+        "[[ 51 129]\n [ 11 181]]",
+        "[[ 33 147]\n [  2 190]]",
+        "[[  0 180]\n [  0 192]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.025440",
+      "numberEpochsRan": [
+        42,
+        41,
+        40,
+        80,
+        30
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.81      0.48      0.60       180\n           1       0.65      0.90      0.75       192\n\n    accuracy                           0.69       372\n   macro avg       0.73      0.69      0.68       372\nweighted avg       0.73      0.69      0.68       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.83      0.47      0.60       180\n           1       0.65      0.91      0.76       192\n\n    accuracy                           0.70       372\n   macro avg       0.74      0.69      0.68       372\nweighted avg       0.74      0.70      0.68       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.82      0.28      0.42       180\n           1       0.58      0.94      0.72       192\n\n    accuracy                           0.62       372\n   macro avg       0.70      0.61      0.57       372\nweighted avg       0.70      0.62      0.58       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.94      0.18      0.31       180\n           1       0.56      0.99      0.72       192\n\n    accuracy                           0.60       372\n   macro avg       0.75      0.59      0.51       372\nweighted avg       0.75      0.60      0.52       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.00      0.00      0.00       180\n           1       0.52      1.00      0.68       192\n\n    accuracy                           0.52       372\n   macro avg       0.26      0.50      0.34       372\nweighted avg       0.27      0.52      0.35       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.6935483813285828,
+        0.6962365508079529,
+        0.6236559152603149,
+        0.5994623899459839,
+        0.5161290168762207
+      ],
+      "trainAcc": [
+        0.6971735954284668,
+        0.6790040135383606,
+        0.6170928478240967,
+        0.5982503294944763,
+        0.49596232175827026
+      ],
+      "trainTimes": [
+        "0:01:05.535387",
+        "0:01:07.570784",
+        "0:01:11.748359",
+        "0:02:05.518283",
+        "0:00:49.944170"
+      ]
+    },
+    {
+      "Ksize": 5,
+      "NExp": 19,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 64,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000736",
+      "cmatrixs": [
+        "[[ 84  96]\n [ 15 177]]",
+        "[[ 48 132]\n [  9 183]]",
+        "[[119  61]\n [ 35 157]]",
+        "[[105  75]\n [ 26 166]]",
+        "[[ 58 122]\n [ 14 178]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.025440",
+      "numberEpochsRan": [
+        36,
+        28,
+        40,
+        35,
+        33
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.85      0.47      0.60       180\n           1       0.65      0.92      0.76       192\n\n    accuracy                           0.70       372\n   macro avg       0.75      0.69      0.68       372\nweighted avg       0.75      0.70      0.68       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.84      0.27      0.41       180\n           1       0.58      0.95      0.72       192\n\n    accuracy                           0.62       372\n   macro avg       0.71      0.61      0.56       372\nweighted avg       0.71      0.62      0.57       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.77      0.66      0.71       180\n           1       0.72      0.82      0.77       192\n\n    accuracy                           0.74       372\n   macro avg       0.75      0.74      0.74       372\nweighted avg       0.75      0.74      0.74       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.80      0.58      0.68       180\n           1       0.69      0.86      0.77       192\n\n    accuracy                           0.73       372\n   macro avg       0.75      0.72      0.72       372\nweighted avg       0.74      0.73      0.72       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.81      0.32      0.46       180\n           1       0.59      0.93      0.72       192\n\n    accuracy                           0.63       372\n   macro avg       0.70      0.62      0.59       372\nweighted avg       0.70      0.63      0.60       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.7016128897666931,
+        0.6209677457809448,
+        0.7419354915618896,
+        0.7284946441650391,
+        0.6344085931777954
+      ],
+      "trainAcc": [
+        0.6810228824615479,
+        0.6251682639122009,
+        0.7301480770111084,
+        0.7059219479560852,
+        0.6406460404396057
+      ],
+      "trainTimes": [
+        "0:01:28.270326",
+        "0:01:08.863087",
+        "0:01:35.146548",
+        "0:01:27.559210",
+        "0:01:20.598549"
+      ]
+    },
+    {
+      "Ksize": 7,
+      "NExp": 20,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 64,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.001051",
+      "cmatrixs": [
+        "[[  1 179]\n [  2 190]]",
+        "[[ 85  95]\n [ 17 175]]",
+        "[[162  18]\n [103  89]]",
+        "[[ 36 144]\n [  2 190]]",
+        "[[132  48]\n [ 47 145]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.025440",
+      "numberEpochsRan": [
+        28,
+        34,
+        40,
+        32,
+        40
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.33      0.01      0.01       180\n           1       0.51      0.99      0.68       192\n\n    accuracy                           0.51       372\n   macro avg       0.42      0.50      0.34       372\nweighted avg       0.43      0.51      0.35       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.83      0.47      0.60       180\n           1       0.65      0.91      0.76       192\n\n    accuracy                           0.70       372\n   macro avg       0.74      0.69      0.68       372\nweighted avg       0.74      0.70      0.68       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.61      0.90      0.73       180\n           1       0.83      0.46      0.60       192\n\n    accuracy                           0.67       372\n   macro avg       0.72      0.68      0.66       372\nweighted avg       0.73      0.67      0.66       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.95      0.20      0.33       180\n           1       0.57      0.99      0.72       192\n\n    accuracy                           0.61       372\n   macro avg       0.76      0.59      0.53       372\nweighted avg       0.75      0.61      0.53       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.74      0.73      0.74       180\n           1       0.75      0.76      0.75       192\n\n    accuracy                           0.74       372\n   macro avg       0.74      0.74      0.74       372\nweighted avg       0.74      0.74      0.74       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.5134408473968506,
+        0.698924720287323,
+        0.6747311949729919,
+        0.6075268983840942,
+        0.7446236610412598
+      ],
+      "trainAcc": [
+        0.4939434826374054,
+        0.6648721694946289,
+        0.7079407572746277,
+        0.5921937823295593,
+        0.7772544026374817
+      ],
+      "trainTimes": [
+        "0:01:45.573609",
+        "0:02:08.880014",
+        "0:02:27.410364",
+        "0:02:00.034730",
+        "0:02:27.363766"
+      ]
+    },
+    {
+      "Ksize": 2,
+      "NExp": 21,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 128,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000425",
+      "cmatrixs": [
+        "[[173   7]\n [136  56]]",
+        "[[ 66 114]\n [ 13 179]]",
+        "[[178   2]\n [174  18]]",
+        "[[ 61 119]\n [ 29 163]]",
+        "[[175   5]\n [145  47]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.016563",
+      "numberEpochsRan": [
+        14,
+        31,
+        11,
+        41,
+        16
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.56      0.96      0.71       180\n           1       0.89      0.29      0.44       192\n\n    accuracy                           0.62       372\n   macro avg       0.72      0.63      0.57       372\nweighted avg       0.73      0.62      0.57       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.84      0.37      0.51       180\n           1       0.61      0.93      0.74       192\n\n    accuracy                           0.66       372\n   macro avg       0.72      0.65      0.62       372\nweighted avg       0.72      0.66      0.63       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.51      0.99      0.67       180\n           1       0.90      0.09      0.17       192\n\n    accuracy                           0.53       372\n   macro avg       0.70      0.54      0.42       372\nweighted avg       0.71      0.53      0.41       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.68      0.34      0.45       180\n           1       0.58      0.85      0.69       192\n\n    accuracy                           0.60       372\n   macro avg       0.63      0.59      0.57       372\nweighted avg       0.63      0.60      0.57       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.55      0.97      0.70       180\n           1       0.90      0.24      0.39       192\n\n    accuracy                           0.60       372\n   macro avg       0.73      0.61      0.54       372\nweighted avg       0.73      0.60      0.54       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.6155914068222046,
+        0.6586021780967712,
+        0.5268816947937012,
+        0.602150559425354,
+        0.5967742204666138
+      ],
+      "trainAcc": [
+        0.6467025279998779,
+        0.6345894932746887,
+        0.5484521985054016,
+        0.6345894932746887,
+        0.6271870732307434
+      ],
+      "trainTimes": [
+        "0:00:13.327865",
+        "0:00:33.041585",
+        "0:00:08.402028",
+        "0:00:39.004006",
+        "0:00:14.986192"
+      ]
+    },
+    {
+      "Ksize": 3,
+      "NExp": 22,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 128,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000472",
+      "cmatrixs": [
+        "[[119  61]\n [ 44 148]]",
+        "[[ 45 135]\n [  7 185]]",
+        "[[ 56 124]\n [  7 185]]",
+        "[[ 31 149]\n [  2 190]]",
+        "[[ 12 168]\n [  3 189]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.016563",
+      "numberEpochsRan": [
+        44,
+        37,
+        66,
+        33,
+        36
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.73      0.66      0.69       180\n           1       0.71      0.77      0.74       192\n\n    accuracy                           0.72       372\n   macro avg       0.72      0.72      0.72       372\nweighted avg       0.72      0.72      0.72       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.87      0.25      0.39       180\n           1       0.58      0.96      0.72       192\n\n    accuracy                           0.62       372\n   macro avg       0.72      0.61      0.56       372\nweighted avg       0.72      0.62      0.56       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.89      0.31      0.46       180\n           1       0.60      0.96      0.74       192\n\n    accuracy                           0.65       372\n   macro avg       0.74      0.64      0.60       372\nweighted avg       0.74      0.65      0.60       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.94      0.17      0.29       180\n           1       0.56      0.99      0.72       192\n\n    accuracy                           0.59       372\n   macro avg       0.75      0.58      0.50       372\nweighted avg       0.74      0.59      0.51       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.80      0.07      0.12       180\n           1       0.53      0.98      0.69       192\n\n    accuracy                           0.54       372\n   macro avg       0.66      0.53      0.41       372\nweighted avg       0.66      0.54      0.41       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.7177419066429138,
+        0.6182795763015747,
+        0.647849440574646,
+        0.5940860509872437,
+        0.5403226017951965
+      ],
+      "trainAcc": [
+        0.7382234334945679,
+        0.6117092967033386,
+        0.6473755240440369,
+        0.5679677128791809,
+        0.5545087456703186
+      ],
+      "trainTimes": [
+        "0:00:49.684826",
+        "0:00:40.771517",
+        "0:01:09.762027",
+        "0:00:37.723509",
+        "0:00:43.891165"
+      ]
+    },
+    {
+      "Ksize": 5,
+      "NExp": 23,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 128,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000578",
+      "cmatrixs": [
+        "[[108  72]\n [ 29 163]]",
+        "[[122  58]\n [ 45 147]]",
+        "[[ 58 122]\n [ 10 182]]",
+        "[[ 64 116]\n [ 11 181]]",
+        "[[ 29 151]\n [  4 188]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.016563",
+      "numberEpochsRan": [
+        40,
+        65,
+        37,
+        41,
+        37
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.79      0.60      0.68       180\n           1       0.69      0.85      0.76       192\n\n    accuracy                           0.73       372\n   macro avg       0.74      0.72      0.72       372\nweighted avg       0.74      0.73      0.72       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.73      0.68      0.70       180\n           1       0.72      0.77      0.74       192\n\n    accuracy                           0.72       372\n   macro avg       0.72      0.72      0.72       372\nweighted avg       0.72      0.72      0.72       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.85      0.32      0.47       180\n           1       0.60      0.95      0.73       192\n\n    accuracy                           0.65       372\n   macro avg       0.73      0.64      0.60       372\nweighted avg       0.72      0.65      0.61       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.85      0.36      0.50       180\n           1       0.61      0.94      0.74       192\n\n    accuracy                           0.66       372\n   macro avg       0.73      0.65      0.62       372\nweighted avg       0.73      0.66      0.62       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.88      0.16      0.27       180\n           1       0.55      0.98      0.71       192\n\n    accuracy                           0.58       372\n   macro avg       0.72      0.57      0.49       372\nweighted avg       0.71      0.58      0.50       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.7284946441650391,
+        0.7231183052062988,
+        0.6451612710952759,
+        0.6586021780967712,
+        0.5833333134651184
+      ],
+      "trainAcc": [
+        0.7032301425933838,
+        0.755047082901001,
+        0.6608344316482544,
+        0.6682368516921997,
+        0.5948855876922607
+      ],
+      "trainTimes": [
+        "0:00:56.061993",
+        "0:01:26.476744",
+        "0:00:57.611063",
+        "0:00:57.528978",
+        "0:00:58.292979"
+      ]
+    },
+    {
+      "Ksize": 7,
+      "NExp": 24,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 128,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000702",
+      "cmatrixs": [
+        "[[135  45]\n [ 46 146]]",
+        "[[163  17]\n [102  90]]",
+        "[[155  25]\n [ 82 110]]",
+        "[[126  54]\n [ 44 148]]",
+        "[[ 85  95]\n [ 16 176]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.016563",
+      "numberEpochsRan": [
+        36,
+        32,
+        33,
+        37,
+        40
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.75      0.75      0.75       180\n           1       0.76      0.76      0.76       192\n\n    accuracy                           0.76       372\n   macro avg       0.76      0.76      0.76       372\nweighted avg       0.76      0.76      0.76       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.62      0.91      0.73       180\n           1       0.84      0.47      0.60       192\n\n    accuracy                           0.68       372\n   macro avg       0.73      0.69      0.67       372\nweighted avg       0.73      0.68      0.67       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.65      0.86      0.74       180\n           1       0.81      0.57      0.67       192\n\n    accuracy                           0.71       372\n   macro avg       0.73      0.72      0.71       372\nweighted avg       0.74      0.71      0.71       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.74      0.70      0.72       180\n           1       0.73      0.77      0.75       192\n\n    accuracy                           0.74       372\n   macro avg       0.74      0.74      0.74       372\nweighted avg       0.74      0.74      0.74       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.84      0.47      0.60       180\n           1       0.65      0.92      0.76       192\n\n    accuracy                           0.70       372\n   macro avg       0.75      0.69      0.68       372\nweighted avg       0.74      0.70      0.69       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.7553763389587402,
+        0.6801075339317322,
+        0.7123655676841736,
+        0.7365591526031494,
+        0.7016128897666931
+      ],
+      "trainAcc": [
+        0.7711978554725647,
+        0.7059219479560852,
+        0.755047082901001,
+        0.727456271648407,
+        0.6911171078681946
+      ],
+      "trainTimes": [
+        "0:01:15.437244",
+        "0:01:08.875710",
+        "0:01:10.330505",
+        "0:01:18.406275",
+        "0:01:21.466525"
+      ]
+    },
+    {
+      "Ksize": 2,
+      "NExp": 25,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 192,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000419",
+      "cmatrixs": [
+        "[[116  64]\n [ 31 161]]",
+        "[[170  10]\n [165  27]]",
+        "[[179   1]\n [183   9]]",
+        "[[141  39]\n [ 94  98]]",
+        "[[  6 174]\n [  4 188]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.013147",
+      "numberEpochsRan": [
+        65,
+        14,
+        11,
+        16,
+        24
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.79      0.64      0.71       180\n           1       0.72      0.84      0.77       192\n\n    accuracy                           0.74       372\n   macro avg       0.75      0.74      0.74       372\nweighted avg       0.75      0.74      0.74       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.51      0.94      0.66       180\n           1       0.73      0.14      0.24       192\n\n    accuracy                           0.53       372\n   macro avg       0.62      0.54      0.45       372\nweighted avg       0.62      0.53      0.44       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.49      0.99      0.66       180\n           1       0.90      0.05      0.09       192\n\n    accuracy                           0.51       372\n   macro avg       0.70      0.52      0.37       372\nweighted avg       0.70      0.51      0.37       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.60      0.78      0.68       180\n           1       0.72      0.51      0.60       192\n\n    accuracy                           0.64       372\n   macro avg       0.66      0.65      0.64       372\nweighted avg       0.66      0.64      0.64       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.60      0.03      0.06       180\n           1       0.52      0.98      0.68       192\n\n    accuracy                           0.52       372\n   macro avg       0.56      0.51      0.37       372\nweighted avg       0.56      0.52      0.38       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.7446236610412598,
+        0.5295698642730713,
+        0.5053763389587402,
+        0.6424731016159058,
+        0.5215053558349609
+      ],
+      "trainAcc": [
+        0.7321668863296509,
+        0.5208613872528076,
+        0.5168237090110779,
+        0.6769852042198181,
+        0.5269178748130798
+      ],
+      "trainTimes": [
+        "0:00:55.749714",
+        "0:00:10.387904",
+        "0:00:06.722309",
+        "0:00:11.607462",
+        "0:00:22.185357"
+      ]
+    },
+    {
+      "Ksize": 3,
+      "NExp": 26,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 192,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000412",
+      "cmatrixs": [
+        "[[ 26 154]\n [  4 188]]",
+        "[[174   6]\n [167  25]]",
+        "[[136  44]\n [ 42 150]]",
+        "[[ 72 108]\n [ 19 173]]",
+        "[[171   9]\n [162  30]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.013147",
+      "numberEpochsRan": [
+        31,
+        17,
+        80,
+        33,
+        13
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.87      0.14      0.25       180\n           1       0.55      0.98      0.70       192\n\n    accuracy                           0.58       372\n   macro avg       0.71      0.56      0.48       372\nweighted avg       0.70      0.58      0.48       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.51      0.97      0.67       180\n           1       0.81      0.13      0.22       192\n\n    accuracy                           0.53       372\n   macro avg       0.66      0.55      0.45       372\nweighted avg       0.66      0.53      0.44       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.76      0.76      0.76       180\n           1       0.77      0.78      0.78       192\n\n    accuracy                           0.77       372\n   macro avg       0.77      0.77      0.77       372\nweighted avg       0.77      0.77      0.77       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.79      0.40      0.53       180\n           1       0.62      0.90      0.73       192\n\n    accuracy                           0.66       372\n   macro avg       0.70      0.65      0.63       372\nweighted avg       0.70      0.66      0.63       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.51      0.95      0.67       180\n           1       0.77      0.16      0.26       192\n\n    accuracy                           0.54       372\n   macro avg       0.64      0.55      0.46       372\nweighted avg       0.65      0.54      0.46       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.5752688050270081,
+        0.5349462628364563,
+        0.7688171863555908,
+        0.6586021780967712,
+        0.5403226017951965
+      ],
+      "trainAcc": [
+        0.5706595182418823,
+        0.5767160058021545,
+        0.784656822681427,
+        0.6675639152526855,
+        0.6096904277801514
+      ],
+      "trainTimes": [
+        "0:00:35.571793",
+        "0:00:13.792709",
+        "0:01:17.351296",
+        "0:00:26.849255",
+        "0:00:09.040950"
+      ]
+    },
+    {
+      "Ksize": 5,
+      "NExp": 27,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 192,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000512",
+      "cmatrixs": [
+        "[[168  12]\n [119  73]]",
+        "[[ 32 148]\n [  4 188]]",
+        "[[143  37]\n [ 57 135]]",
+        "[[  7 173]\n [  1 191]]",
+        "[[118  62]\n [ 45 147]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.013147",
+      "numberEpochsRan": [
+        32,
+        25,
+        65,
+        35,
+        49
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.59      0.93      0.72       180\n           1       0.86      0.38      0.53       192\n\n    accuracy                           0.65       372\n   macro avg       0.72      0.66      0.62       372\nweighted avg       0.73      0.65      0.62       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.89      0.18      0.30       180\n           1       0.56      0.98      0.71       192\n\n    accuracy                           0.59       372\n   macro avg       0.72      0.58      0.50       372\nweighted avg       0.72      0.59      0.51       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.71      0.79      0.75       180\n           1       0.78      0.70      0.74       192\n\n    accuracy                           0.75       372\n   macro avg       0.75      0.75      0.75       372\nweighted avg       0.75      0.75      0.75       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.88      0.04      0.07       180\n           1       0.52      0.99      0.69       192\n\n    accuracy                           0.53       372\n   macro avg       0.70      0.52      0.38       372\nweighted avg       0.69      0.53      0.39       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.72      0.66      0.69       180\n           1       0.70      0.77      0.73       192\n\n    accuracy                           0.71       372\n   macro avg       0.71      0.71      0.71       372\nweighted avg       0.71      0.71      0.71       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.647849440574646,
+        0.5913978219032288,
+        0.7473118305206299,
+        0.5322580933570862,
+        0.7123655676841736
+      ],
+      "trainAcc": [
+        0.6736204624176025,
+        0.5820996165275574,
+        0.7940780520439148,
+        0.5289367437362671,
+        0.7126514315605164
+      ],
+      "trainTimes": [
+        "0:00:36.413007",
+        "0:00:26.542237",
+        "0:01:10.935502",
+        "0:00:40.762274",
+        "0:00:53.708467"
+      ]
+    },
+    {
+      "Ksize": 7,
+      "NExp": 28,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 192,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000612",
+      "cmatrixs": [
+        "[[ 69 111]\n [ 16 176]]",
+        "[[ 92  88]\n [ 17 175]]",
+        "[[115  65]\n [ 47 145]]",
+        "[[166  14]\n [ 96  96]]",
+        "[[142  38]\n [ 59 133]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.013147",
+      "numberEpochsRan": [
+        34,
+        62,
+        40,
+        65,
+        46
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.81      0.38      0.52       180\n           1       0.61      0.92      0.73       192\n\n    accuracy                           0.66       372\n   macro avg       0.71      0.65      0.63       372\nweighted avg       0.71      0.66      0.63       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.84      0.51      0.64       180\n           1       0.67      0.91      0.77       192\n\n    accuracy                           0.72       372\n   macro avg       0.75      0.71      0.70       372\nweighted avg       0.75      0.72      0.71       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.71      0.64      0.67       180\n           1       0.69      0.76      0.72       192\n\n    accuracy                           0.70       372\n   macro avg       0.70      0.70      0.70       372\nweighted avg       0.70      0.70      0.70       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.63      0.92      0.75       180\n           1       0.87      0.50      0.64       192\n\n    accuracy                           0.70       372\n   macro avg       0.75      0.71      0.69       372\nweighted avg       0.76      0.70      0.69       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.71      0.79      0.75       180\n           1       0.78      0.69      0.73       192\n\n    accuracy                           0.74       372\n   macro avg       0.74      0.74      0.74       372\nweighted avg       0.74      0.74      0.74       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.6586021780967712,
+        0.7177419066429138,
+        0.698924720287323,
+        0.7043010592460632,
+        0.7392473220825195
+      ],
+      "trainAcc": [
+        0.6507402658462524,
+        0.7261103391647339,
+        0.6803499460220337,
+        0.7496635317802429,
+        0.7678331136703491
+      ],
+      "trainTimes": [
+        "0:00:56.397343",
+        "0:01:34.164248",
+        "0:01:02.832429",
+        "0:01:32.275249",
+        "0:01:10.741673"
+      ]
+    },
+    {
+      "Ksize": 2,
+      "NExp": 29,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 256,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000367",
+      "cmatrixs": [
+        "[[ 59 121]\n [ 10 182]]",
+        "[[ 44 136]\n [ 13 179]]",
+        "[[ 57 123]\n [  6 186]]",
+        "[[169  11]\n [132  60]]",
+        "[[ 67 113]\n [ 21 171]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.010417",
+      "numberEpochsRan": [
+        57,
+        25,
+        45,
+        14,
+        20
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.86      0.33      0.47       180\n           1       0.60      0.95      0.74       192\n\n    accuracy                           0.65       372\n   macro avg       0.73      0.64      0.60       372\nweighted avg       0.72      0.65      0.61       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.77      0.24      0.37       180\n           1       0.57      0.93      0.71       192\n\n    accuracy                           0.60       372\n   macro avg       0.67      0.59      0.54       372\nweighted avg       0.67      0.60      0.54       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.90      0.32      0.47       180\n           1       0.60      0.97      0.74       192\n\n    accuracy                           0.65       372\n   macro avg       0.75      0.64      0.61       372\nweighted avg       0.75      0.65      0.61       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.56      0.94      0.70       180\n           1       0.85      0.31      0.46       192\n\n    accuracy                           0.62       372\n   macro avg       0.70      0.63      0.58       372\nweighted avg       0.71      0.62      0.58       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.76      0.37      0.50       180\n           1       0.60      0.89      0.72       192\n\n    accuracy                           0.64       372\n   macro avg       0.68      0.63      0.61       372\nweighted avg       0.68      0.64      0.61       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.647849440574646,
+        0.5994623899459839,
+        0.6532257795333862,
+        0.6155914068222046,
+        0.6397849321365356
+      ],
+      "trainAcc": [
+        0.648048460483551,
+        0.5982503294944763,
+        0.6453566551208496,
+        0.6312247514724731,
+        0.6265141367912292
+      ],
+      "trainTimes": [
+        "0:00:45.401667",
+        "0:00:15.290076",
+        "0:00:32.552673",
+        "0:00:08.992325",
+        "0:00:16.255435"
+      ]
+    },
+    {
+      "Ksize": 3,
+      "NExp": 30,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 256,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000412",
+      "cmatrixs": [
+        "[[ 39 141]\n [  4 188]]",
+        "[[  5 175]\n [  2 190]]",
+        "[[110  70]\n [ 23 169]]",
+        "[[ 36 144]\n [  9 183]]",
+        "[[ 30 150]\n [  2 190]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.010417",
+      "numberEpochsRan": [
+        48,
+        36,
+        74,
+        41,
+        32
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.91      0.22      0.35       180\n           1       0.57      0.98      0.72       192\n\n    accuracy                           0.61       372\n   macro avg       0.74      0.60      0.54       372\nweighted avg       0.73      0.61      0.54       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.71      0.03      0.05       180\n           1       0.52      0.99      0.68       192\n\n    accuracy                           0.52       372\n   macro avg       0.62      0.51      0.37       372\nweighted avg       0.61      0.52      0.38       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.83      0.61      0.70       180\n           1       0.71      0.88      0.78       192\n\n    accuracy                           0.75       372\n   macro avg       0.77      0.75      0.74       372\nweighted avg       0.77      0.75      0.74       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.80      0.20      0.32       180\n           1       0.56      0.95      0.71       192\n\n    accuracy                           0.59       372\n   macro avg       0.68      0.58      0.51       372\nweighted avg       0.68      0.59      0.52       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.94      0.17      0.28       180\n           1       0.56      0.99      0.71       192\n\n    accuracy                           0.59       372\n   macro avg       0.75      0.58      0.50       372\nweighted avg       0.74      0.59      0.51       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.6102150678634644,
+        0.524193525314331,
+        0.75,
+        0.5887096524238586,
+        0.5913978219032288
+      ],
+      "trainAcc": [
+        0.6292059421539307,
+        0.5356662273406982,
+        0.7698519229888916,
+        0.6043068766593933,
+        0.5471063256263733
+      ],
+      "trainTimes": [
+        "0:00:36.999009",
+        "0:00:28.324837",
+        "0:00:55.647617",
+        "0:00:28.447638",
+        "0:00:23.037714"
+      ]
+    },
+    {
+      "Ksize": 5,
+      "NExp": 31,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 256,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000448",
+      "cmatrixs": [
+        "[[152  28]\n [ 64 128]]",
+        "[[135  45]\n [ 48 144]]",
+        "[[144  36]\n [ 63 129]]",
+        "[[102  78]\n [ 25 167]]",
+        "[[ 15 165]\n [  4 188]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.010417",
+      "numberEpochsRan": [
+        80,
+        62,
+        52,
+        52,
+        75
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.70      0.84      0.77       180\n           1       0.82      0.67      0.74       192\n\n    accuracy                           0.75       372\n   macro avg       0.76      0.76      0.75       372\nweighted avg       0.76      0.75      0.75       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.74      0.75      0.74       180\n           1       0.76      0.75      0.76       192\n\n    accuracy                           0.75       372\n   macro avg       0.75      0.75      0.75       372\nweighted avg       0.75      0.75      0.75       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.70      0.80      0.74       180\n           1       0.78      0.67      0.72       192\n\n    accuracy                           0.73       372\n   macro avg       0.74      0.74      0.73       372\nweighted avg       0.74      0.73      0.73       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.80      0.57      0.66       180\n           1       0.68      0.87      0.76       192\n\n    accuracy                           0.72       372\n   macro avg       0.74      0.72      0.71       372\nweighted avg       0.74      0.72      0.72       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.79      0.08      0.15       180\n           1       0.53      0.98      0.69       192\n\n    accuracy                           0.55       372\n   macro avg       0.66      0.53      0.42       372\nweighted avg       0.66      0.55      0.43       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.7526881694793701,
+        0.75,
+        0.7338709831237793,
+        0.7231183052062988,
+        0.5456989407539368
+      ],
+      "trainAcc": [
+        0.7833108901977539,
+        0.7812920808792114,
+        0.7812920808792114,
+        0.7355316281318665,
+        0.5612382292747498
+      ],
+      "trainTimes": [
+        "0:01:10.334719",
+        "0:01:02.071345",
+        "0:00:49.657145",
+        "0:00:46.390631",
+        "0:01:09.050466"
+      ]
+    },
+    {
+      "Ksize": 7,
+      "NExp": 32,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 256,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000583",
+      "cmatrixs": [
+        "[[125  55]\n [ 48 144]]",
+        "[[151  29]\n [ 79 113]]",
+        "[[156  24]\n [ 85 107]]",
+        "[[152  28]\n [ 64 128]]",
+        "[[165  15]\n [ 95  97]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.010417",
+      "numberEpochsRan": [
+        36,
+        33,
+        58,
+        36,
+        49
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.72      0.69      0.71       180\n           1       0.72      0.75      0.74       192\n\n    accuracy                           0.72       372\n   macro avg       0.72      0.72      0.72       372\nweighted avg       0.72      0.72      0.72       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.66      0.84      0.74       180\n           1       0.80      0.59      0.68       192\n\n    accuracy                           0.71       372\n   macro avg       0.73      0.71      0.71       372\nweighted avg       0.73      0.71      0.71       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.65      0.87      0.74       180\n           1       0.82      0.56      0.66       192\n\n    accuracy                           0.71       372\n   macro avg       0.73      0.71      0.70       372\nweighted avg       0.73      0.71      0.70       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.70      0.84      0.77       180\n           1       0.82      0.67      0.74       192\n\n    accuracy                           0.75       372\n   macro avg       0.76      0.76      0.75       372\nweighted avg       0.76      0.75      0.75       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.63      0.92      0.75       180\n           1       0.87      0.51      0.64       192\n\n    accuracy                           0.70       372\n   macro avg       0.75      0.71      0.69       372\nweighted avg       0.75      0.70      0.69       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.7231183052062988,
+        0.7096773982048035,
+        0.7069892287254333,
+        0.7526881694793701,
+        0.7043010592460632
+      ],
+      "trainAcc": [
+        0.7341857552528381,
+        0.7557200789451599,
+        0.7631224989891052,
+        0.7893674373626709,
+        0.7368775010108948
+      ],
+      "trainTimes": [
+        "0:00:50.534288",
+        "0:00:44.529183",
+        "0:01:13.619500",
+        "0:00:47.326468",
+        "0:01:07.589342"
+      ]
+    },
+    {
+      "Ksize": 2,
+      "NExp": 33,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 128,
+      "NwinL": 512,
+      "avgPredicTime": "0:00:00.000445",
+      "cmatrixs": [
+        "[[ 82  98]\n [ 36 156]]",
+        "[[ 48 132]\n [ 28 164]]",
+        "[[ 60 120]\n [ 37 155]]",
+        "[[ 90  90]\n [ 24 168]]",
+        "[[126  54]\n [ 72 120]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.017764",
+      "numberEpochsRan": [
+        41,
+        20,
+        18,
+        28,
+        27
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.69      0.46      0.55       180\n           1       0.61      0.81      0.70       192\n\n    accuracy                           0.64       372\n   macro avg       0.65      0.63      0.62       372\nweighted avg       0.65      0.64      0.63       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.63      0.27      0.38       180\n           1       0.55      0.85      0.67       192\n\n    accuracy                           0.57       372\n   macro avg       0.59      0.56      0.52       372\nweighted avg       0.59      0.57      0.53       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.62      0.33      0.43       180\n           1       0.56      0.81      0.66       192\n\n    accuracy                           0.58       372\n   macro avg       0.59      0.57      0.55       372\nweighted avg       0.59      0.58      0.55       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.79      0.50      0.61       180\n           1       0.65      0.88      0.75       192\n\n    accuracy                           0.69       372\n   macro avg       0.72      0.69      0.68       372\nweighted avg       0.72      0.69      0.68       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.64      0.70      0.67       180\n           1       0.69      0.62      0.66       192\n\n    accuracy                           0.66       372\n   macro avg       0.66      0.66      0.66       372\nweighted avg       0.66      0.66      0.66       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.6397849321365356,
+        0.5698924660682678,
+        0.5779569745063782,
+        0.6935483813285828,
+        0.6612903475761414
+      ],
+      "trainAcc": [
+        0.6837146878242493,
+        0.5672947764396667,
+        0.5632570385932922,
+        0.6924629807472229,
+        0.6971735954284668
+      ],
+      "trainTimes": [
+        "0:00:33.179230",
+        "0:00:16.860782",
+        "0:00:15.326972",
+        "0:00:24.420607",
+        "0:00:24.090857"
+      ]
+    },
+    {
+      "Ksize": 3,
+      "NExp": 34,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 128,
+      "NwinL": 512,
+      "avgPredicTime": "0:00:00.000488",
+      "cmatrixs": [
+        "[[ 21 159]\n [  2 190]]",
+        "[[ 33 147]\n [  5 187]]",
+        "[[174   6]\n [159  33]]",
+        "[[ 15 165]\n [  3 189]]",
+        "[[ 54 126]\n [ 17 175]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.017764",
+      "numberEpochsRan": [
+        32,
+        68,
+        21,
+        34,
+        37
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.91      0.12      0.21       180\n           1       0.54      0.99      0.70       192\n\n    accuracy                           0.57       372\n   macro avg       0.73      0.55      0.45       372\nweighted avg       0.72      0.57      0.46       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.87      0.18      0.30       180\n           1       0.56      0.97      0.71       192\n\n    accuracy                           0.59       372\n   macro avg       0.71      0.58      0.51       372\nweighted avg       0.71      0.59      0.51       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.52      0.97      0.68       180\n           1       0.85      0.17      0.29       192\n\n    accuracy                           0.56       372\n   macro avg       0.68      0.57      0.48       372\nweighted avg       0.69      0.56      0.48       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.83      0.08      0.15       180\n           1       0.53      0.98      0.69       192\n\n    accuracy                           0.55       372\n   macro avg       0.68      0.53      0.42       372\nweighted avg       0.68      0.55      0.43       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.76      0.30      0.43       180\n           1       0.58      0.91      0.71       192\n\n    accuracy                           0.62       372\n   macro avg       0.67      0.61      0.57       372\nweighted avg       0.67      0.62      0.57       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.5672042965888977,
+        0.5913978219032288,
+        0.5564516186714172,
+        0.5483871102333069,
+        0.6155914068222046
+      ],
+      "trainAcc": [
+        0.5672947764396667,
+        0.6009421348571777,
+        0.6063256859779358,
+        0.5363391637802124,
+        0.6271870732307434
+      ],
+      "trainTimes": [
+        "0:00:37.843133",
+        "0:01:10.700607",
+        "0:00:23.095289",
+        "0:00:39.832463",
+        "0:00:42.916619"
+      ]
+    },
+    {
+      "Ksize": 5,
+      "NExp": 35,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 128,
+      "NwinL": 512,
+      "avgPredicTime": "0:00:00.000568",
+      "cmatrixs": [
+        "[[ 78 102]\n [  8 184]]",
+        "[[ 94  86]\n [ 16 176]]",
+        "[[ 40 140]\n [  3 189]]",
+        "[[ 24 156]\n [  2 190]]",
+        "[[ 76 104]\n [ 17 175]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.017764",
+      "numberEpochsRan": [
+        47,
+        40,
+        60,
+        42,
+        34
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.91      0.43      0.59       180\n           1       0.64      0.96      0.77       192\n\n    accuracy                           0.70       372\n   macro avg       0.78      0.70      0.68       372\nweighted avg       0.77      0.70      0.68       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.85      0.52      0.65       180\n           1       0.67      0.92      0.78       192\n\n    accuracy                           0.73       372\n   macro avg       0.76      0.72      0.71       372\nweighted avg       0.76      0.73      0.71       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.93      0.22      0.36       180\n           1       0.57      0.98      0.73       192\n\n    accuracy                           0.62       372\n   macro avg       0.75      0.60      0.54       372\nweighted avg       0.75      0.62      0.55       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.92      0.13      0.23       180\n           1       0.55      0.99      0.71       192\n\n    accuracy                           0.58       372\n   macro avg       0.74      0.56      0.47       372\nweighted avg       0.73      0.58      0.48       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.82      0.42      0.56       180\n           1       0.63      0.91      0.74       192\n\n    accuracy                           0.67       372\n   macro avg       0.72      0.67      0.65       372\nweighted avg       0.72      0.67      0.65       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.7043010592460632,
+        0.725806474685669,
+        0.6155914068222046,
+        0.5752688050270081,
+        0.6747311949729919
+      ],
+      "trainAcc": [
+        0.6810228824615479,
+        0.7335127592086792,
+        0.6292059421539307,
+        0.5430686473846436,
+        0.6493943333625793
+      ],
+      "trainTimes": [
+        "0:01:07.342427",
+        "0:01:02.640867",
+        "0:01:22.259639",
+        "0:01:00.652401",
+        "0:00:49.438568"
+      ]
+    },
+    {
+      "Ksize": 7,
+      "NExp": 36,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 128,
+      "NwinL": 512,
+      "avgPredicTime": "0:00:00.000750",
+      "cmatrixs": [
+        "[[  4 176]\n [  1 191]]",
+        "[[135  45]\n [ 58 134]]",
+        "[[163  17]\n [108  84]]",
+        "[[119  61]\n [ 26 166]]",
+        "[[ 67 113]\n [ 10 182]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.017764",
+      "numberEpochsRan": [
+        40,
+        80,
+        40,
+        80,
+        36
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.80      0.02      0.04       180\n           1       0.52      0.99      0.68       192\n\n    accuracy                           0.52       372\n   macro avg       0.66      0.51      0.36       372\nweighted avg       0.66      0.52      0.37       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.70      0.75      0.72       180\n           1       0.75      0.70      0.72       192\n\n    accuracy                           0.72       372\n   macro avg       0.72      0.72      0.72       372\nweighted avg       0.72      0.72      0.72       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.60      0.91      0.72       180\n           1       0.83      0.44      0.57       192\n\n    accuracy                           0.66       372\n   macro avg       0.72      0.67      0.65       372\nweighted avg       0.72      0.66      0.65       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.82      0.66      0.73       180\n           1       0.73      0.86      0.79       192\n\n    accuracy                           0.77       372\n   macro avg       0.78      0.76      0.76       372\nweighted avg       0.77      0.77      0.76       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.87      0.37      0.52       180\n           1       0.62      0.95      0.75       192\n\n    accuracy                           0.67       372\n   macro avg       0.74      0.66      0.63       372\nweighted avg       0.74      0.67      0.64       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.524193525314331,
+        0.7231183052062988,
+        0.6639785170555115,
+        0.7661290168762207,
+        0.6693548560142517
+      ],
+      "trainAcc": [
+        0.511440098285675,
+        0.772543728351593,
+        0.7139973044395447,
+        0.796096920967102,
+        0.6668909788131714
+      ],
+      "trainTimes": [
+        "0:01:26.556467",
+        "0:02:42.726272",
+        "0:01:29.247102",
+        "0:02:45.700492",
+        "0:01:16.852944"
+      ]
+    },
+    {
+      "Ksize": 2,
+      "NExp": 37,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 256,
+      "NwinL": 512,
+      "avgPredicTime": "0:00:00.000398",
+      "cmatrixs": [
+        "[[156  24]\n [130  62]]",
+        "[[122  58]\n [ 74 118]]",
+        "[[152  28]\n [ 90 102]]",
+        "[[ 43 137]\n [ 14 178]]",
+        "[[113  67]\n [103  89]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.010089",
+      "numberEpochsRan": [
+        17,
+        47,
+        28,
+        22,
+        25
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.55      0.87      0.67       180\n           1       0.72      0.32      0.45       192\n\n    accuracy                           0.59       372\n   macro avg       0.63      0.59      0.56       372\nweighted avg       0.64      0.59      0.55       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.62      0.68      0.65       180\n           1       0.67      0.61      0.64       192\n\n    accuracy                           0.65       372\n   macro avg       0.65      0.65      0.65       372\nweighted avg       0.65      0.65      0.64       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.63      0.84      0.72       180\n           1       0.78      0.53      0.63       192\n\n    accuracy                           0.68       372\n   macro avg       0.71      0.69      0.68       372\nweighted avg       0.71      0.68      0.68       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.75      0.24      0.36       180\n           1       0.57      0.93      0.70       192\n\n    accuracy                           0.59       372\n   macro avg       0.66      0.58      0.53       372\nweighted avg       0.66      0.59      0.54       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.52      0.63      0.57       180\n           1       0.57      0.46      0.51       192\n\n    accuracy                           0.54       372\n   macro avg       0.55      0.55      0.54       372\nweighted avg       0.55      0.54      0.54       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.5860214829444885,
+        0.6451612710952759,
+        0.6827957034111023,
+        0.5940860509872437,
+        0.5430107712745667
+      ],
+      "trainAcc": [
+        0.6117092967033386,
+        0.6857334971427917,
+        0.7281292080879211,
+        0.5780619382858276,
+        0.596904456615448
+      ],
+      "trainTimes": [
+        "0:00:11.760677",
+        "0:00:32.508297",
+        "0:00:18.550893",
+        "0:00:15.416186",
+        "0:00:18.574437"
+      ]
+    },
+    {
+      "Ksize": 3,
+      "NExp": 38,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 256,
+      "NwinL": 512,
+      "avgPredicTime": "0:00:00.000443",
+      "cmatrixs": [
+        "[[  6 174]\n [  3 189]]",
+        "[[ 65 115]\n [ 14 178]]",
+        "[[ 15 165]\n [  4 188]]",
+        "[[ 15 165]\n [  1 191]]",
+        "[[138  42]\n [ 72 120]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.010089",
+      "numberEpochsRan": [
+        50,
+        37,
+        52,
+        28,
+        34
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.67      0.03      0.06       180\n           1       0.52      0.98      0.68       192\n\n    accuracy                           0.52       372\n   macro avg       0.59      0.51      0.37       372\nweighted avg       0.59      0.52      0.38       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.82      0.36      0.50       180\n           1       0.61      0.93      0.73       192\n\n    accuracy                           0.65       372\n   macro avg       0.72      0.64      0.62       372\nweighted avg       0.71      0.65      0.62       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.79      0.08      0.15       180\n           1       0.53      0.98      0.69       192\n\n    accuracy                           0.55       372\n   macro avg       0.66      0.53      0.42       372\nweighted avg       0.66      0.55      0.43       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.94      0.08      0.15       180\n           1       0.54      0.99      0.70       192\n\n    accuracy                           0.55       372\n   macro avg       0.74      0.54      0.43       372\nweighted avg       0.73      0.55      0.43       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.66      0.77      0.71       180\n           1       0.74      0.62      0.68       192\n\n    accuracy                           0.69       372\n   macro avg       0.70      0.70      0.69       372\nweighted avg       0.70      0.69      0.69       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.524193525314331,
+        0.6532257795333862,
+        0.5456989407539368,
+        0.5537634491920471,
+        0.6935483813285828
+      ],
+      "trainAcc": [
+        0.5275908708572388,
+        0.6325706839561462,
+        0.5531628727912903,
+        0.5356662273406982,
+        0.7523553371429443
+      ],
+      "trainTimes": [
+        "0:00:42.622594",
+        "0:00:34.835959",
+        "0:00:45.552346",
+        "0:00:23.327274",
+        "0:00:32.175230"
+      ]
+    },
+    {
+      "Ksize": 5,
+      "NExp": 39,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 256,
+      "NwinL": 512,
+      "avgPredicTime": "0:00:00.000479",
+      "cmatrixs": [
+        "[[141  39]\n [ 57 135]]",
+        "[[151  29]\n [ 80 112]]",
+        "[[125  55]\n [ 29 163]]",
+        "[[161  19]\n [ 97  95]]",
+        "[[123  57]\n [ 62 130]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.010089",
+      "numberEpochsRan": [
+        49,
+        36,
+        66,
+        34,
+        65
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.71      0.78      0.75       180\n           1       0.78      0.70      0.74       192\n\n    accuracy                           0.74       372\n   macro avg       0.74      0.74      0.74       372\nweighted avg       0.75      0.74      0.74       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.65      0.84      0.73       180\n           1       0.79      0.58      0.67       192\n\n    accuracy                           0.71       372\n   macro avg       0.72      0.71      0.70       372\nweighted avg       0.73      0.71      0.70       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.81      0.69      0.75       180\n           1       0.75      0.85      0.80       192\n\n    accuracy                           0.77       372\n   macro avg       0.78      0.77      0.77       372\nweighted avg       0.78      0.77      0.77       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.62      0.89      0.74       180\n           1       0.83      0.49      0.62       192\n\n    accuracy                           0.69       372\n   macro avg       0.73      0.69      0.68       372\nweighted avg       0.73      0.69      0.68       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.66      0.68      0.67       180\n           1       0.70      0.68      0.69       192\n\n    accuracy                           0.68       372\n   macro avg       0.68      0.68      0.68       372\nweighted avg       0.68      0.68      0.68       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.7419354915618896,
+        0.7069892287254333,
+        0.774193525314331,
+        0.6881720423698425,
+        0.6801075339317322
+      ],
+      "trainAcc": [
+        0.7691789865493774,
+        0.7732166647911072,
+        0.7732166647911072,
+        0.7341857552528381,
+        0.7402422428131104
+      ],
+      "trainTimes": [
+        "0:00:46.303893",
+        "0:00:37.851056",
+        "0:01:02.058468",
+        "0:00:35.084647",
+        "0:01:01.481772"
+      ]
+    },
+    {
+      "Ksize": 7,
+      "NExp": 40,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 256,
+      "NwinL": 512,
+      "avgPredicTime": "0:00:00.000565",
+      "cmatrixs": [
+        "[[133  47]\n [ 62 130]]",
+        "[[ 85  95]\n [ 19 173]]",
+        "[[ 17 163]\n [  2 190]]",
+        "[[133  47]\n [ 68 124]]",
+        "[[155  25]\n [ 90 102]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.010089",
+      "numberEpochsRan": [
+        36,
+        62,
+        40,
+        51,
+        35
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.68      0.74      0.71       180\n           1       0.73      0.68      0.70       192\n\n    accuracy                           0.71       372\n   macro avg       0.71      0.71      0.71       372\nweighted avg       0.71      0.71      0.71       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.82      0.47      0.60       180\n           1       0.65      0.90      0.75       192\n\n    accuracy                           0.69       372\n   macro avg       0.73      0.69      0.68       372\nweighted avg       0.73      0.69      0.68       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.89      0.09      0.17       180\n           1       0.54      0.99      0.70       192\n\n    accuracy                           0.56       372\n   macro avg       0.72      0.54      0.43       372\nweighted avg       0.71      0.56      0.44       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.66      0.74      0.70       180\n           1       0.73      0.65      0.68       192\n\n    accuracy                           0.69       372\n   macro avg       0.69      0.69      0.69       372\nweighted avg       0.69      0.69      0.69       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.63      0.86      0.73       180\n           1       0.80      0.53      0.64       192\n\n    accuracy                           0.69       372\n   macro avg       0.72      0.70      0.68       372\nweighted avg       0.72      0.69      0.68       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.7069892287254333,
+        0.6935483813285828,
+        0.5564516186714172,
+        0.6908602118492126,
+        0.6908602118492126
+      ],
+      "trainAcc": [
+        0.7436069846153259,
+        0.6830417513847351,
+        0.5370121002197266,
+        0.7577388882637024,
+        0.7288021445274353
+      ],
+      "trainTimes": [
+        "0:00:51.688761",
+        "0:01:18.351873",
+        "0:00:56.228844",
+        "0:01:09.446275",
+        "0:00:47.694119"
+      ]
+    },
+    {
+      "Ksize": 2,
+      "NExp": 41,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 384,
+      "NwinL": 512,
+      "avgPredicTime": "0:00:00.000352",
+      "cmatrixs": [
+        "[[100  80]\n [ 40 152]]",
+        "[[ 30 150]\n [  6 186]]",
+        "[[ 68 112]\n [ 20 172]]",
+        "[[ 75 105]\n [ 21 171]]",
+        "[[ 33 147]\n [ 15 177]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.012053",
+      "numberEpochsRan": [
+        18,
+        42,
+        51,
+        42,
+        37
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.71      0.56      0.63       180\n           1       0.66      0.79      0.72       192\n\n    accuracy                           0.68       372\n   macro avg       0.68      0.67      0.67       372\nweighted avg       0.68      0.68      0.67       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.83      0.17      0.28       180\n           1       0.55      0.97      0.70       192\n\n    accuracy                           0.58       372\n   macro avg       0.69      0.57      0.49       372\nweighted avg       0.69      0.58      0.50       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.77      0.38      0.51       180\n           1       0.61      0.90      0.72       192\n\n    accuracy                           0.65       372\n   macro avg       0.69      0.64      0.62       372\nweighted avg       0.69      0.65      0.62       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.78      0.42      0.54       180\n           1       0.62      0.89      0.73       192\n\n    accuracy                           0.66       372\n   macro avg       0.70      0.65      0.64       372\nweighted avg       0.70      0.66      0.64       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.69      0.18      0.29       180\n           1       0.55      0.92      0.69       192\n\n    accuracy                           0.56       372\n   macro avg       0.62      0.55      0.49       372\nweighted avg       0.61      0.56      0.49       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.6774193644523621,
+        0.5806451439857483,
+        0.6451612710952759,
+        0.6612903475761414,
+        0.5645161271095276
+      ],
+      "trainAcc": [
+        0.675639271736145,
+        0.5861372947692871,
+        0.6433378458023071,
+        0.6716015934944153,
+        0.6002691984176636
+      ],
+      "trainTimes": [
+        "0:00:13.521557",
+        "0:00:23.571846",
+        "0:00:41.102399",
+        "0:00:33.229542",
+        "0:00:25.670189"
+      ]
+    },
+    {
+      "Ksize": 3,
+      "NExp": 42,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 384,
+      "NwinL": 512,
+      "avgPredicTime": "0:00:00.000393",
+      "cmatrixs": [
+        "[[  8 172]\n [  1 191]]",
+        "[[  8 172]\n [  0 192]]",
+        "[[ 51 129]\n [  9 183]]",
+        "[[  7 173]\n [  3 189]]",
+        "[[ 50 130]\n [ 13 179]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.012053",
+      "numberEpochsRan": [
+        49,
+        36,
+        41,
+        41,
+        47
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.89      0.04      0.08       180\n           1       0.53      0.99      0.69       192\n\n    accuracy                           0.53       372\n   macro avg       0.71      0.52      0.39       372\nweighted avg       0.70      0.53      0.40       372\n",
+        "              precision    recall  f1-score   support\n\n           0       1.00      0.04      0.09       180\n           1       0.53      1.00      0.69       192\n\n    accuracy                           0.54       372\n   macro avg       0.76      0.52      0.39       372\nweighted avg       0.76      0.54      0.40       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.85      0.28      0.42       180\n           1       0.59      0.95      0.73       192\n\n    accuracy                           0.63       372\n   macro avg       0.72      0.62      0.58       372\nweighted avg       0.71      0.63      0.58       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.70      0.04      0.07       180\n           1       0.52      0.98      0.68       192\n\n    accuracy                           0.53       372\n   macro avg       0.61      0.51      0.38       372\nweighted avg       0.61      0.53      0.39       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.79      0.28      0.41       180\n           1       0.58      0.93      0.71       192\n\n    accuracy                           0.62       372\n   macro avg       0.69      0.61      0.56       372\nweighted avg       0.68      0.62      0.57       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.5349462628364563,
+        0.5376344323158264,
+        0.6290322542190552,
+        0.5268816947937012,
+        0.6155914068222046
+      ],
+      "trainAcc": [
+        0.5074024200439453,
+        0.5040376782417297,
+        0.6271870732307434,
+        0.5444145202636719,
+        0.6211305260658264
+      ],
+      "trainTimes": [
+        "0:00:35.768065",
+        "0:00:28.889315",
+        "0:00:37.051822",
+        "0:00:31.379549",
+        "0:00:34.895327"
+      ]
+    },
+    {
+      "Ksize": 5,
+      "NExp": 43,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 384,
+      "NwinL": 512,
+      "avgPredicTime": "0:00:00.000419",
+      "cmatrixs": [
+        "[[108  72]\n [ 33 159]]",
+        "[[110  70]\n [ 27 165]]",
+        "[[ 57 123]\n [ 15 177]]",
+        "[[146  34]\n [ 73 119]]",
+        "[[  0 180]\n [  1 191]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.012053",
+      "numberEpochsRan": [
+        52,
+        36,
+        52,
+        40,
+        40
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.77      0.60      0.67       180\n           1       0.69      0.83      0.75       192\n\n    accuracy                           0.72       372\n   macro avg       0.73      0.71      0.71       372\nweighted avg       0.73      0.72      0.71       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.80      0.61      0.69       180\n           1       0.70      0.86      0.77       192\n\n    accuracy                           0.74       372\n   macro avg       0.75      0.74      0.73       372\nweighted avg       0.75      0.74      0.73       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.79      0.32      0.45       180\n           1       0.59      0.92      0.72       192\n\n    accuracy                           0.63       372\n   macro avg       0.69      0.62      0.59       372\nweighted avg       0.69      0.63      0.59       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.67      0.81      0.73       180\n           1       0.78      0.62      0.69       192\n\n    accuracy                           0.71       372\n   macro avg       0.72      0.72      0.71       372\nweighted avg       0.72      0.71      0.71       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.00      0.00      0.00       180\n           1       0.51      0.99      0.68       192\n\n    accuracy                           0.51       372\n   macro avg       0.26      0.50      0.34       372\nweighted avg       0.27      0.51      0.35       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.7177419066429138,
+        0.7392473220825195,
+        0.6290322542190552,
+        0.7123655676841736,
+        0.5134408473968506
+      ],
+      "trainAcc": [
+        0.7166891098022461,
+        0.7193809151649475,
+        0.6278600096702576,
+        0.772543728351593,
+        0.4952893555164337
+      ],
+      "trainTimes": [
+        "0:00:45.991258",
+        "0:00:34.527921",
+        "0:00:41.587772",
+        "0:00:35.952961",
+        "0:00:34.907135"
+      ]
+    },
+    {
+      "Ksize": 7,
+      "NExp": 44,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 384,
+      "NwinL": 512,
+      "avgPredicTime": "0:00:00.000509",
+      "cmatrixs": [
+        "[[ 53 127]\n [  6 186]]",
+        "[[113  67]\n [ 40 152]]",
+        "[[112  68]\n [ 23 169]]",
+        "[[ 27 153]\n [  2 190]]",
+        "[[ 92  88]\n [ 22 170]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.012053",
+      "numberEpochsRan": [
+        63,
+        36,
+        68,
+        45,
+        58
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.90      0.29      0.44       180\n           1       0.59      0.97      0.74       192\n\n    accuracy                           0.64       372\n   macro avg       0.75      0.63      0.59       372\nweighted avg       0.74      0.64      0.59       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.74      0.63      0.68       180\n           1       0.69      0.79      0.74       192\n\n    accuracy                           0.71       372\n   macro avg       0.72      0.71      0.71       372\nweighted avg       0.72      0.71      0.71       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.83      0.62      0.71       180\n           1       0.71      0.88      0.79       192\n\n    accuracy                           0.76       372\n   macro avg       0.77      0.75      0.75       372\nweighted avg       0.77      0.76      0.75       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.93      0.15      0.26       180\n           1       0.55      0.99      0.71       192\n\n    accuracy                           0.58       372\n   macro avg       0.74      0.57      0.48       372\nweighted avg       0.74      0.58      0.49       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.81      0.51      0.63       180\n           1       0.66      0.89      0.76       192\n\n    accuracy                           0.70       372\n   macro avg       0.73      0.70      0.69       372\nweighted avg       0.73      0.70      0.69       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.6424731016159058,
+        0.7123655676841736,
+        0.7553763389587402,
+        0.5833333134651184,
+        0.7043010592460632
+      ],
+      "trainAcc": [
+        0.6440107822418213,
+        0.7422611117362976,
+        0.7839838266372681,
+        0.5841184258460999,
+        0.7173620462417603
+      ],
+      "trainTimes": [
+        "0:01:09.402494",
+        "0:00:38.780302",
+        "0:01:07.398601",
+        "0:00:45.063485",
+        "0:01:02.053524"
+      ]
+    },
+    {
+      "Ksize": 2,
+      "NExp": 45,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 512,
+      "NwinL": 512,
+      "avgPredicTime": "0:00:00.000339",
+      "cmatrixs": [
+        "[[ 19 161]\n [  4 188]]",
+        "[[115  65]\n [ 39 153]]",
+        "[[ 94  86]\n [ 47 145]]",
+        "[[ 69 111]\n [ 27 165]]",
+        "[[104  76]\n [ 29 163]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.011570",
+      "numberEpochsRan": [
+        18,
+        37,
+        30,
+        30,
+        38
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.83      0.11      0.19       180\n           1       0.54      0.98      0.70       192\n\n    accuracy                           0.56       372\n   macro avg       0.68      0.54      0.44       372\nweighted avg       0.68      0.56      0.45       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.75      0.64      0.69       180\n           1       0.70      0.80      0.75       192\n\n    accuracy                           0.72       372\n   macro avg       0.72      0.72      0.72       372\nweighted avg       0.72      0.72      0.72       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.67      0.52      0.59       180\n           1       0.63      0.76      0.69       192\n\n    accuracy                           0.64       372\n   macro avg       0.65      0.64      0.64       372\nweighted avg       0.65      0.64      0.64       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.72      0.38      0.50       180\n           1       0.60      0.86      0.71       192\n\n    accuracy                           0.63       372\n   macro avg       0.66      0.62      0.60       372\nweighted avg       0.66      0.63      0.61       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.78      0.58      0.66       180\n           1       0.68      0.85      0.76       192\n\n    accuracy                           0.72       372\n   macro avg       0.73      0.71      0.71       372\nweighted avg       0.73      0.72      0.71       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.5564516186714172,
+        0.7204301357269287,
+        0.6424731016159058,
+        0.6290322542190552,
+        0.7177419066429138
+      ],
+      "trainAcc": [
+        0.5619111657142639,
+        0.7462987899780273,
+        0.6561238169670105,
+        0.624495267868042,
+        0.7160161733627319
+      ],
+      "trainTimes": [
+        "0:00:11.592867",
+        "0:00:31.265518",
+        "0:00:15.726790",
+        "0:00:17.316104",
+        "0:00:24.918149"
+      ]
+    },
+    {
+      "Ksize": 3,
+      "NExp": 46,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 512,
+      "NwinL": 512,
+      "avgPredicTime": "0:00:00.000352",
+      "cmatrixs": [
+        "[[107  73]\n [ 29 163]]",
+        "[[ 94  86]\n [ 36 156]]",
+        "[[ 76 104]\n [ 19 173]]",
+        "[[ 91  89]\n [ 19 173]]",
+        "[[ 45 135]\n [ 10 182]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.011570",
+      "numberEpochsRan": [
+        37,
+        30,
+        50,
+        75,
+        34
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.79      0.59      0.68       180\n           1       0.69      0.85      0.76       192\n\n    accuracy                           0.73       372\n   macro avg       0.74      0.72      0.72       372\nweighted avg       0.74      0.73      0.72       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.72      0.52      0.61       180\n           1       0.64      0.81      0.72       192\n\n    accuracy                           0.67       372\n   macro avg       0.68      0.67      0.66       372\nweighted avg       0.68      0.67      0.66       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.80      0.42      0.55       180\n           1       0.62      0.90      0.74       192\n\n    accuracy                           0.67       372\n   macro avg       0.71      0.66      0.65       372\nweighted avg       0.71      0.67      0.65       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.83      0.51      0.63       180\n           1       0.66      0.90      0.76       192\n\n    accuracy                           0.71       372\n   macro avg       0.74      0.70      0.69       372\nweighted avg       0.74      0.71      0.70       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.82      0.25      0.38       180\n           1       0.57      0.95      0.72       192\n\n    accuracy                           0.61       372\n   macro avg       0.70      0.60      0.55       372\nweighted avg       0.69      0.61      0.55       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.725806474685669,
+        0.6720430254936218,
+        0.6693548560142517,
+        0.7096773982048035,
+        0.6102150678634644
+      ],
+      "trainAcc": [
+        0.7045760154724121,
+        0.6446837186813354,
+        0.6668909788131714,
+        0.6951547861099243,
+        0.6271870732307434
+      ],
+      "trainTimes": [
+        "0:00:29.233544",
+        "0:00:20.413474",
+        "0:00:41.861484",
+        "0:00:51.822168",
+        "0:00:30.451111"
+      ]
+    },
+    {
+      "Ksize": 5,
+      "NExp": 47,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 512,
+      "NwinL": 512,
+      "avgPredicTime": "0:00:00.000408",
+      "cmatrixs": [
+        "[[ 30 150]\n [  5 187]]",
+        "[[ 15 165]\n [  2 190]]",
+        "[[128  52]\n [ 50 142]]",
+        "[[ 55 125]\n [  2 190]]",
+        "[[110  70]\n [ 28 164]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.011570",
+      "numberEpochsRan": [
+        41,
+        36,
+        35,
+        56,
+        57
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.86      0.17      0.28       180\n           1       0.55      0.97      0.71       192\n\n    accuracy                           0.58       372\n   macro avg       0.71      0.57      0.49       372\nweighted avg       0.70      0.58      0.50       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.88      0.08      0.15       180\n           1       0.54      0.99      0.69       192\n\n    accuracy                           0.55       372\n   macro avg       0.71      0.54      0.42       372\nweighted avg       0.70      0.55      0.43       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.72      0.71      0.72       180\n           1       0.73      0.74      0.74       192\n\n    accuracy                           0.73       372\n   macro avg       0.73      0.73      0.73       372\nweighted avg       0.73      0.73      0.73       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.96      0.31      0.46       180\n           1       0.60      0.99      0.75       192\n\n    accuracy                           0.66       372\n   macro avg       0.78      0.65      0.61       372\nweighted avg       0.78      0.66      0.61       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.80      0.61      0.69       180\n           1       0.70      0.85      0.77       192\n\n    accuracy                           0.74       372\n   macro avg       0.75      0.73      0.73       372\nweighted avg       0.75      0.74      0.73       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.5833333134651184,
+        0.551075279712677,
+        0.725806474685669,
+        0.6586021780967712,
+        0.7365591526031494
+      ],
+      "trainAcc": [
+        0.584791362285614,
+        0.523553192615509,
+        0.7415881752967834,
+        0.6487213969230652,
+        0.7658142447471619
+      ],
+      "trainTimes": [
+        "0:00:33.321038",
+        "0:00:30.458037",
+        "0:00:32.445527",
+        "0:00:40.019319",
+        "0:00:40.325404"
+      ]
+    },
+    {
+      "Ksize": 7,
+      "NExp": 48,
+      "N_MFCC": 3,
+      "Nfft": 512,
+      "NhopL": 512,
+      "NwinL": 512,
+      "avgPredicTime": "0:00:00.000492",
+      "cmatrixs": [
+        "[[ 84  96]\n [ 21 171]]",
+        "[[ 84  96]\n [ 15 177]]",
+        "[[127  53]\n [ 40 152]]",
+        "[[114  66]\n [ 22 170]]",
+        "[[163  17]\n [ 91 101]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.011570",
+      "numberEpochsRan": [
+        36,
+        31,
+        58,
+        80,
+        58
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.80      0.47      0.59       180\n           1       0.64      0.89      0.75       192\n\n    accuracy                           0.69       372\n   macro avg       0.72      0.68      0.67       372\nweighted avg       0.72      0.69      0.67       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.85      0.47      0.60       180\n           1       0.65      0.92      0.76       192\n\n    accuracy                           0.70       372\n   macro avg       0.75      0.69      0.68       372\nweighted avg       0.75      0.70      0.68       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.76      0.71      0.73       180\n           1       0.74      0.79      0.77       192\n\n    accuracy                           0.75       372\n   macro avg       0.75      0.75      0.75       372\nweighted avg       0.75      0.75      0.75       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.84      0.63      0.72       180\n           1       0.72      0.89      0.79       192\n\n    accuracy                           0.76       372\n   macro avg       0.78      0.76      0.76       372\nweighted avg       0.78      0.76      0.76       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.64      0.91      0.75       180\n           1       0.86      0.53      0.65       192\n\n    accuracy                           0.71       372\n   macro avg       0.75      0.72      0.70       372\nweighted avg       0.75      0.71      0.70       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.6854838728904724,
+        0.7016128897666931,
+        0.75,
+        0.7634408473968506,
+        0.7096773982048035
+      ],
+      "trainAcc": [
+        0.6944818496704102,
+        0.6985195279121399,
+        0.8021534085273743,
+        0.8102288246154785,
+        0.7483176589012146
+      ],
+      "trainTimes": [
+        "0:00:39.480125",
+        "0:00:29.800128",
+        "0:00:47.915983",
+        "0:01:10.111515",
+        "0:00:54.805646"
+      ]
+    },
+    {
+      "Ksize": 2,
+      "NExp": 49,
+      "N_MFCC": 3,
+      "Nfft": 1024,
+      "NhopL": 64,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000519",
+      "cmatrixs": [
+        "[[ 62 118]\n [ 31 161]]",
+        "[[169  11]\n [121  71]]",
+        "[[108  72]\n [ 52 140]]",
+        "[[ 57 123]\n [ 37 155]]",
+        "[[178   2]\n [166  26]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.035764",
+      "numberEpochsRan": [
+        29,
+        13,
+        26,
+        37,
+        14
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.67      0.34      0.45       180\n           1       0.58      0.84      0.68       192\n\n    accuracy                           0.60       372\n   macro avg       0.62      0.59      0.57       372\nweighted avg       0.62      0.60      0.57       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.58      0.94      0.72       180\n           1       0.87      0.37      0.52       192\n\n    accuracy                           0.65       372\n   macro avg       0.72      0.65      0.62       372\nweighted avg       0.73      0.65      0.62       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.68      0.60      0.64       180\n           1       0.66      0.73      0.69       192\n\n    accuracy                           0.67       372\n   macro avg       0.67      0.66      0.66       372\nweighted avg       0.67      0.67      0.67       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.61      0.32      0.42       180\n           1       0.56      0.81      0.66       192\n\n    accuracy                           0.57       372\n   macro avg       0.58      0.56      0.54       372\nweighted avg       0.58      0.57      0.54       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.52      0.99      0.68       180\n           1       0.93      0.14      0.24       192\n\n    accuracy                           0.55       372\n   macro avg       0.72      0.56      0.46       372\nweighted avg       0.73      0.55      0.45       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.5994623899459839,
+        0.6451612710952759,
+        0.6666666865348816,
+        0.5698924660682678,
+        0.5483871102333069
+      ],
+      "trainAcc": [
+        0.6090174913406372,
+        0.6440107822418213,
+        0.6890982389450073,
+        0.5935397148132324,
+        0.5578734874725342
+      ],
+      "trainTimes": [
+        "0:00:45.322629",
+        "0:00:16.824180",
+        "0:00:40.048107",
+        "0:00:52.052952",
+        "0:00:19.559563"
+      ]
+    },
+    {
+      "Ksize": 3,
+      "NExp": 50,
+      "N_MFCC": 3,
+      "Nfft": 1024,
+      "NhopL": 64,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000565",
+      "cmatrixs": [
+        "[[ 22 158]\n [  4 188]]",
+        "[[127  53]\n [ 82 110]]",
+        "[[134  46]\n [ 43 149]]",
+        "[[ 88  92]\n [ 24 168]]",
+        "[[ 41 139]\n [  7 185]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.035764",
+      "numberEpochsRan": [
+        33,
+        52,
+        57,
+        38,
+        28
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.85      0.12      0.21       180\n           1       0.54      0.98      0.70       192\n\n    accuracy                           0.56       372\n   macro avg       0.69      0.55      0.46       372\nweighted avg       0.69      0.56      0.46       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.61      0.71      0.65       180\n           1       0.67      0.57      0.62       192\n\n    accuracy                           0.64       372\n   macro avg       0.64      0.64      0.64       372\nweighted avg       0.64      0.64      0.64       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.76      0.74      0.75       180\n           1       0.76      0.78      0.77       192\n\n    accuracy                           0.76       372\n   macro avg       0.76      0.76      0.76       372\nweighted avg       0.76      0.76      0.76       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.79      0.49      0.60       180\n           1       0.65      0.88      0.74       192\n\n    accuracy                           0.69       372\n   macro avg       0.72      0.68      0.67       372\nweighted avg       0.71      0.69      0.68       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.85      0.23      0.36       180\n           1       0.57      0.96      0.72       192\n\n    accuracy                           0.61       372\n   macro avg       0.71      0.60      0.54       372\nweighted avg       0.71      0.61      0.54       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.5645161271095276,
+        0.6370967626571655,
+        0.7607526779174805,
+        0.6881720423698425,
+        0.6075268983840942
+      ],
+      "trainAcc": [
+        0.5767160058021545,
+        0.7025572061538696,
+        0.77860027551651,
+        0.7207267880439758,
+        0.6123822331428528
+      ],
+      "trainTimes": [
+        "0:00:51.863252",
+        "0:01:18.815534",
+        "0:01:37.321668",
+        "0:01:01.714646",
+        "0:00:44.913376"
+      ]
+    },
+    {
+      "Ksize": 5,
+      "NExp": 51,
+      "N_MFCC": 3,
+      "Nfft": 1024,
+      "NhopL": 64,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000746",
+      "cmatrixs": [
+        "[[125  55]\n [ 35 157]]",
+        "[[ 82  98]\n [  3 189]]",
+        "[[143  37]\n [ 69 123]]",
+        "[[ 80 100]\n [ 11 181]]",
+        "[[136  44]\n [ 56 136]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.035764",
+      "numberEpochsRan": [
+        78,
+        64,
+        40,
+        40,
+        31
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.78      0.69      0.74       180\n           1       0.74      0.82      0.78       192\n\n    accuracy                           0.76       372\n   macro avg       0.76      0.76      0.76       372\nweighted avg       0.76      0.76      0.76       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.96      0.46      0.62       180\n           1       0.66      0.98      0.79       192\n\n    accuracy                           0.73       372\n   macro avg       0.81      0.72      0.70       372\nweighted avg       0.81      0.73      0.71       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.67      0.79      0.73       180\n           1       0.77      0.64      0.70       192\n\n    accuracy                           0.72       372\n   macro avg       0.72      0.72      0.71       372\nweighted avg       0.72      0.72      0.71       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.88      0.44      0.59       180\n           1       0.64      0.94      0.77       192\n\n    accuracy                           0.70       372\n   macro avg       0.76      0.69      0.68       372\nweighted avg       0.76      0.70      0.68       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.71      0.76      0.73       180\n           1       0.76      0.71      0.73       192\n\n    accuracy                           0.73       372\n   macro avg       0.73      0.73      0.73       372\nweighted avg       0.73      0.73      0.73       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.7580645084381104,
+        0.7284946441650391,
+        0.7150537371635437,
+        0.7016128897666931,
+        0.7311828136444092
+      ],
+      "trainAcc": [
+        0.7617765665054321,
+        0.7341857552528381,
+        0.7590848207473755,
+        0.6803499460220337,
+        0.767160177230835
+      ],
+      "trainTimes": [
+        "0:03:10.110696",
+        "0:02:28.667521",
+        "0:01:41.924464",
+        "0:01:42.125835",
+        "0:01:14.144384"
+      ]
+    },
+    {
+      "Ksize": 7,
+      "NExp": 52,
+      "N_MFCC": 3,
+      "Nfft": 1024,
+      "NhopL": 64,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.001019",
+      "cmatrixs": [
+        "[[136  44]\n [ 59 133]]",
+        "[[150  30]\n [ 75 117]]",
+        "[[ 63 117]\n [  5 187]]",
+        "[[106  74]\n [ 17 175]]",
+        "[[147  33]\n [ 76 116]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.035764",
+      "numberEpochsRan": [
+        34,
+        45,
+        36,
+        36,
+        28
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.70      0.76      0.73       180\n           1       0.75      0.69      0.72       192\n\n    accuracy                           0.72       372\n   macro avg       0.72      0.72      0.72       372\nweighted avg       0.73      0.72      0.72       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.67      0.83      0.74       180\n           1       0.80      0.61      0.69       192\n\n    accuracy                           0.72       372\n   macro avg       0.73      0.72      0.72       372\nweighted avg       0.73      0.72      0.71       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.93      0.35      0.51       180\n           1       0.62      0.97      0.75       192\n\n    accuracy                           0.67       372\n   macro avg       0.77      0.66      0.63       372\nweighted avg       0.77      0.67      0.64       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.86      0.59      0.70       180\n           1       0.70      0.91      0.79       192\n\n    accuracy                           0.76       372\n   macro avg       0.78      0.75      0.75       372\nweighted avg       0.78      0.76      0.75       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.66      0.82      0.73       180\n           1       0.78      0.60      0.68       192\n\n    accuracy                           0.71       372\n   macro avg       0.72      0.71      0.70       372\nweighted avg       0.72      0.71      0.70       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.7231183052062988,
+        0.7177419066429138,
+        0.6720430254936218,
+        0.7553763389587402,
+        0.7069892287254333
+      ],
+      "trainAcc": [
+        0.7368775010108948,
+        0.7644683718681335,
+        0.6662180423736572,
+        0.715343177318573,
+        0.7395693063735962
+      ],
+      "trainTimes": [
+        "0:02:07.956106",
+        "0:02:49.432967",
+        "0:02:15.886424",
+        "0:02:12.153008",
+        "0:01:45.815753"
+      ]
+    },
+    {
+      "Ksize": 2,
+      "NExp": 53,
+      "N_MFCC": 3,
+      "Nfft": 1024,
+      "NhopL": 128,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000428",
+      "cmatrixs": [
+        "[[  0 180]\n [  0 192]]",
+        "[[178   2]\n [185   7]]",
+        "[[ 18 162]\n [  8 184]]",
+        "[[173   7]\n [155  37]]",
+        "[[ 27 153]\n [  4 188]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.024313",
+      "numberEpochsRan": [
+        20,
+        11,
+        42,
+        12,
+        26
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.00      0.00      0.00       180\n           1       0.52      1.00      0.68       192\n\n    accuracy                           0.52       372\n   macro avg       0.26      0.50      0.34       372\nweighted avg       0.27      0.52      0.35       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.49      0.99      0.66       180\n           1       0.78      0.04      0.07       192\n\n    accuracy                           0.50       372\n   macro avg       0.63      0.51      0.36       372\nweighted avg       0.64      0.50      0.35       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.69      0.10      0.17       180\n           1       0.53      0.96      0.68       192\n\n    accuracy                           0.54       372\n   macro avg       0.61      0.53      0.43       372\nweighted avg       0.61      0.54      0.44       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.53      0.96      0.68       180\n           1       0.84      0.19      0.31       192\n\n    accuracy                           0.56       372\n   macro avg       0.68      0.58      0.50       372\nweighted avg       0.69      0.56      0.49       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.87      0.15      0.26       180\n           1       0.55      0.98      0.71       192\n\n    accuracy                           0.58       372\n   macro avg       0.71      0.56      0.48       372\nweighted avg       0.71      0.58      0.49       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.5161290168762207,
+        0.4973118305206299,
+        0.5430107712745667,
+        0.5645161271095276,
+        0.5779569745063782
+      ],
+      "trainAcc": [
+        0.5100942254066467,
+        0.523553192615509,
+        0.5625841021537781,
+        0.5693135857582092,
+        0.5746971964836121
+      ],
+      "trainTimes": [
+        "0:00:18.159825",
+        "0:00:08.920422",
+        "0:00:42.705942",
+        "0:00:10.405823",
+        "0:00:28.021971"
+      ]
+    },
+    {
+      "Ksize": 3,
+      "NExp": 54,
+      "N_MFCC": 3,
+      "Nfft": 1024,
+      "NhopL": 128,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000457",
+      "cmatrixs": [
+        "[[ 26 154]\n [  3 189]]",
+        "[[ 27 153]\n [  7 185]]",
+        "[[ 68 112]\n [ 26 166]]",
+        "[[ 32 148]\n [  5 187]]",
+        "[[ 15 165]\n [  2 190]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.024313",
+      "numberEpochsRan": [
+        25,
+        29,
+        44,
+        29,
+        31
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.90      0.14      0.25       180\n           1       0.55      0.98      0.71       192\n\n    accuracy                           0.58       372\n   macro avg       0.72      0.56      0.48       372\nweighted avg       0.72      0.58      0.49       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.79      0.15      0.25       180\n           1       0.55      0.96      0.70       192\n\n    accuracy                           0.57       372\n   macro avg       0.67      0.56      0.48       372\nweighted avg       0.67      0.57      0.48       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.72      0.38      0.50       180\n           1       0.60      0.86      0.71       192\n\n    accuracy                           0.63       372\n   macro avg       0.66      0.62      0.60       372\nweighted avg       0.66      0.63      0.60       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.86      0.18      0.29       180\n           1       0.56      0.97      0.71       192\n\n    accuracy                           0.59       372\n   macro avg       0.71      0.58      0.50       372\nweighted avg       0.71      0.59      0.51       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.88      0.08      0.15       180\n           1       0.54      0.99      0.69       192\n\n    accuracy                           0.55       372\n   macro avg       0.71      0.54      0.42       372\nweighted avg       0.70      0.55      0.43       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.5779569745063782,
+        0.5698924660682678,
+        0.6290322542190552,
+        0.5887096524238586,
+        0.551075279712677
+      ],
+      "trainAcc": [
+        0.5989232659339905,
+        0.5773889422416687,
+        0.6285329461097717,
+        0.5753701329231262,
+        0.5329744219779968
+      ],
+      "trainTimes": [
+        "0:00:32.655248",
+        "0:00:34.728748",
+        "0:00:48.335017",
+        "0:00:37.367255",
+        "0:00:27.640630"
+      ]
+    },
+    {
+      "Ksize": 5,
+      "NExp": 55,
+      "N_MFCC": 3,
+      "Nfft": 1024,
+      "NhopL": 128,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000564",
+      "cmatrixs": [
+        "[[ 76 104]\n [ 15 177]]",
+        "[[157  23]\n [ 96  96]]",
+        "[[152  28]\n [ 86 106]]",
+        "[[ 59 121]\n [  9 183]]",
+        "[[149  31]\n [ 83 109]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.024313",
+      "numberEpochsRan": [
+        40,
+        37,
+        35,
+        35,
+        53
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.84      0.42      0.56       180\n           1       0.63      0.92      0.75       192\n\n    accuracy                           0.68       372\n   macro avg       0.73      0.67      0.65       372\nweighted avg       0.73      0.68      0.66       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.62      0.87      0.73       180\n           1       0.81      0.50      0.62       192\n\n    accuracy                           0.68       372\n   macro avg       0.71      0.69      0.67       372\nweighted avg       0.72      0.68      0.67       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.64      0.84      0.73       180\n           1       0.79      0.55      0.65       192\n\n    accuracy                           0.69       372\n   macro avg       0.71      0.70      0.69       372\nweighted avg       0.72      0.69      0.69       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.87      0.33      0.48       180\n           1       0.60      0.95      0.74       192\n\n    accuracy                           0.65       372\n   macro avg       0.73      0.64      0.61       372\nweighted avg       0.73      0.65      0.61       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.64      0.83      0.72       180\n           1       0.78      0.57      0.66       192\n\n    accuracy                           0.69       372\n   macro avg       0.71      0.70      0.69       372\nweighted avg       0.71      0.69      0.69       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.6801075339317322,
+        0.6801075339317322,
+        0.6935483813285828,
+        0.6505376100540161,
+        0.6935483813285828
+      ],
+      "trainAcc": [
+        0.6803499460220337,
+        0.7395693063735962,
+        0.7469717264175415,
+        0.6460295915603638,
+        0.7516823410987854
+      ],
+      "trainTimes": [
+        "0:00:58.961301",
+        "0:00:55.229615",
+        "0:00:54.011584",
+        "0:00:49.248276",
+        "0:01:12.084118"
+      ]
+    },
+    {
+      "Ksize": 7,
+      "NExp": 56,
+      "N_MFCC": 3,
+      "Nfft": 1024,
+      "NhopL": 128,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000704",
+      "cmatrixs": [
+        "[[149  31]\n [ 71 121]]",
+        "[[163  17]\n [ 99  93]]",
+        "[[131  49]\n [ 54 138]]",
+        "[[144  36]\n [ 63 129]]",
+        "[[165  15]\n [ 99  93]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.024313",
+      "numberEpochsRan": [
+        49,
+        34,
+        52,
+        52,
+        52
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.68      0.83      0.74       180\n           1       0.80      0.63      0.70       192\n\n    accuracy                           0.73       372\n   macro avg       0.74      0.73      0.72       372\nweighted avg       0.74      0.73      0.72       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.62      0.91      0.74       180\n           1       0.85      0.48      0.62       192\n\n    accuracy                           0.69       372\n   macro avg       0.73      0.69      0.68       372\nweighted avg       0.74      0.69      0.67       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.71      0.73      0.72       180\n           1       0.74      0.72      0.73       192\n\n    accuracy                           0.72       372\n   macro avg       0.72      0.72      0.72       372\nweighted avg       0.72      0.72      0.72       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.70      0.80      0.74       180\n           1       0.78      0.67      0.72       192\n\n    accuracy                           0.73       372\n   macro avg       0.74      0.74      0.73       372\nweighted avg       0.74      0.73      0.73       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.62      0.92      0.74       180\n           1       0.86      0.48      0.62       192\n\n    accuracy                           0.69       372\n   macro avg       0.74      0.70      0.68       372\nweighted avg       0.75      0.69      0.68       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.725806474685669,
+        0.6881720423698425,
+        0.7231183052062988,
+        0.7338709831237793,
+        0.6935483813285828
+      ],
+      "trainAcc": [
+        0.772543728351593,
+        0.7092866897583008,
+        0.7698519229888916,
+        0.755047082901001,
+        0.7469717264175415
+      ],
+      "trainTimes": [
+        "0:01:50.737563",
+        "0:01:14.402047",
+        "0:01:42.784687",
+        "0:01:50.335671",
+        "0:01:47.756972"
+      ]
+    },
+    {
+      "Ksize": 2,
+      "NExp": 57,
+      "N_MFCC": 3,
+      "Nfft": 1024,
+      "NhopL": 192,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000409",
+      "cmatrixs": [
+        "[[177   3]\n [176  16]]",
+        "[[ 65 115]\n [ 11 181]]",
+        "[[ 50 130]\n [ 16 176]]",
+        "[[ 41 139]\n [ 10 182]]",
+        "[[ 35 145]\n [ 10 182]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.019408",
+      "numberEpochsRan": [
+        14,
+        42,
+        24,
+        33,
+        38
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.50      0.98      0.66       180\n           1       0.84      0.08      0.15       192\n\n    accuracy                           0.52       372\n   macro avg       0.67      0.53      0.41       372\nweighted avg       0.68      0.52      0.40       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.86      0.36      0.51       180\n           1       0.61      0.94      0.74       192\n\n    accuracy                           0.66       372\n   macro avg       0.73      0.65      0.62       372\nweighted avg       0.73      0.66      0.63       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.76      0.28      0.41       180\n           1       0.58      0.92      0.71       192\n\n    accuracy                           0.61       372\n   macro avg       0.67      0.60      0.56       372\nweighted avg       0.66      0.61      0.56       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.80      0.23      0.35       180\n           1       0.57      0.95      0.71       192\n\n    accuracy                           0.60       372\n   macro avg       0.69      0.59      0.53       372\nweighted avg       0.68      0.60      0.54       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.78      0.19      0.31       180\n           1       0.56      0.95      0.70       192\n\n    accuracy                           0.58       372\n   macro avg       0.67      0.57      0.51       372\nweighted avg       0.66      0.58      0.51       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.5188171863555908,
+        0.6612903475761414,
+        0.6075268983840942,
+        0.5994623899459839,
+        0.5833333134651184
+      ],
+      "trainAcc": [
+        0.5491251945495605,
+        0.6507402658462524,
+        0.6076716184616089,
+        0.5780619382858276,
+        0.5504710674285889
+      ],
+      "trainTimes": [
+        "0:00:08.740731",
+        "0:00:40.070353",
+        "0:00:20.859023",
+        "0:00:28.004890",
+        "0:00:29.902711"
+      ]
+    },
+    {
+      "Ksize": 3,
+      "NExp": 58,
+      "N_MFCC": 3,
+      "Nfft": 1024,
+      "NhopL": 192,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000419",
+      "cmatrixs": [
+        "[[ 89  91]\n [ 43 149]]",
+        "[[ 48 132]\n [ 12 180]]",
+        "[[133  47]\n [ 44 148]]",
+        "[[119  61]\n [ 48 144]]",
+        "[[  4 176]\n [  1 191]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.019408",
+      "numberEpochsRan": [
+        28,
+        35,
+        56,
+        80,
+        26
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.67      0.49      0.57       180\n           1       0.62      0.78      0.69       192\n\n    accuracy                           0.64       372\n   macro avg       0.65      0.64      0.63       372\nweighted avg       0.65      0.64      0.63       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.80      0.27      0.40       180\n           1       0.58      0.94      0.71       192\n\n    accuracy                           0.61       372\n   macro avg       0.69      0.60      0.56       372\nweighted avg       0.68      0.61      0.56       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.75      0.74      0.75       180\n           1       0.76      0.77      0.76       192\n\n    accuracy                           0.76       372\n   macro avg       0.76      0.75      0.75       372\nweighted avg       0.76      0.76      0.76       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.71      0.66      0.69       180\n           1       0.70      0.75      0.73       192\n\n    accuracy                           0.71       372\n   macro avg       0.71      0.71      0.71       372\nweighted avg       0.71      0.71      0.71       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.80      0.02      0.04       180\n           1       0.52      0.99      0.68       192\n\n    accuracy                           0.52       372\n   macro avg       0.66      0.51      0.36       372\nweighted avg       0.66      0.52      0.37       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.6397849321365356,
+        0.6129032373428345,
+        0.7553763389587402,
+        0.7069892287254333,
+        0.524193525314331
+      ],
+      "trainAcc": [
+        0.6547779440879822,
+        0.6150740385055542,
+        0.767160177230835,
+        0.7658142447471619,
+        0.5107671618461609
+      ],
+      "trainTimes": [
+        "0:00:27.202912",
+        "0:00:38.509209",
+        "0:00:53.823987",
+        "0:01:15.216948",
+        "0:00:24.562482"
+      ]
+    },
+    {
+      "Ksize": 5,
+      "NExp": 59,
+      "N_MFCC": 3,
+      "Nfft": 1024,
+      "NhopL": 192,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000528",
+      "cmatrixs": [
+        "[[ 55 125]\n [ 14 178]]",
+        "[[126  54]\n [ 33 159]]",
+        "[[130  50]\n [ 56 136]]",
+        "[[141  39]\n [ 62 130]]",
+        "[[ 83  97]\n [ 17 175]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.019408",
+      "numberEpochsRan": [
+        40,
+        51,
+        50,
+        41,
+        43
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.80      0.31      0.44       180\n           1       0.59      0.93      0.72       192\n\n    accuracy                           0.63       372\n   macro avg       0.69      0.62      0.58       372\nweighted avg       0.69      0.63      0.58       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.79      0.70      0.74       180\n           1       0.75      0.83      0.79       192\n\n    accuracy                           0.77       372\n   macro avg       0.77      0.76      0.76       372\nweighted avg       0.77      0.77      0.76       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.70      0.72      0.71       180\n           1       0.73      0.71      0.72       192\n\n    accuracy                           0.72       372\n   macro avg       0.72      0.72      0.71       372\nweighted avg       0.72      0.72      0.72       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.69      0.78      0.74       180\n           1       0.77      0.68      0.72       192\n\n    accuracy                           0.73       372\n   macro avg       0.73      0.73      0.73       372\nweighted avg       0.73      0.73      0.73       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.83      0.46      0.59       180\n           1       0.64      0.91      0.75       192\n\n    accuracy                           0.69       372\n   macro avg       0.74      0.69      0.67       372\nweighted avg       0.73      0.69      0.68       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.6263440847396851,
+        0.7661290168762207,
+        0.7150537371635437,
+        0.7284946441650391,
+        0.6935483813285828
+      ],
+      "trainAcc": [
+        0.6393001079559326,
+        0.7732166647911072,
+        0.7489905953407288,
+        0.7738896608352661,
+        0.681695818901062
+      ],
+      "trainTimes": [
+        "0:00:50.097754",
+        "0:00:56.867064",
+        "0:00:57.213129",
+        "0:00:50.713824",
+        "0:00:48.192182"
+      ]
+    },
+    {
+      "Ksize": 7,
+      "NExp": 60,
+      "N_MFCC": 3,
+      "Nfft": 1024,
+      "NhopL": 192,
+      "NwinL": 256,
+      "avgPredicTime": "0:00:00.000609",
+      "cmatrixs": [
+        "[[152  28]\n [ 92 100]]",
+        "[[128  52]\n [ 48 144]]",
+        "[[147  33]\n [ 72 120]]",
+        "[[147  33]\n [ 79 113]]",
+        "[[155  25]\n [ 79 113]]"
+      ],
+      "durationAvgPreprocs": "0:00:00.019408",
+      "numberEpochsRan": [
+        49,
+        36,
+        58,
+        49,
+        25
+      ],
+      "reports": [
+        "              precision    recall  f1-score   support\n\n           0       0.62      0.84      0.72       180\n           1       0.78      0.52      0.62       192\n\n    accuracy                           0.68       372\n   macro avg       0.70      0.68      0.67       372\nweighted avg       0.70      0.68      0.67       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.73      0.71      0.72       180\n           1       0.73      0.75      0.74       192\n\n    accuracy                           0.73       372\n   macro avg       0.73      0.73      0.73       372\nweighted avg       0.73      0.73      0.73       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.67      0.82      0.74       180\n           1       0.78      0.62      0.70       192\n\n    accuracy                           0.72       372\n   macro avg       0.73      0.72      0.72       372\nweighted avg       0.73      0.72      0.72       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.65      0.82      0.72       180\n           1       0.77      0.59      0.67       192\n\n    accuracy                           0.70       372\n   macro avg       0.71      0.70      0.70       372\nweighted avg       0.71      0.70      0.70       372\n",
+        "              precision    recall  f1-score   support\n\n           0       0.66      0.86      0.75       180\n           1       0.82      0.59      0.68       192\n\n    accuracy                           0.72       372\n   macro avg       0.74      0.72      0.72       372\nweighted avg       0.74      0.72      0.72       372\n"
+      ],
+      "specCPU": "Model name:                      AMD EPYC 7352 24-Core Processor",
+      "specCore": "Core(s) per socket:              24",
+      "specGPU": "GPU 0: Tesla M10 (UUID: GPU-ddb35406-0227-0d31-f9fb-7751f5166f93)",
+      "testAcc": [
+        0.6774193644523621,
+        0.7311828136444092,
+        0.7177419066429138,
+        0.698924720287323,
+        0.7204301357269287
+      ],
+      "trainAcc": [
+        0.755047082901001,
+        0.7288021445274353,
+        0.7711978554725647,
+        0.761103630065918,
+        0.7597577571868896
+      ],
+      "trainTimes": [
+        "0:01:16.272731",
+        "0:00:58.418772",
+        "0:01:27.820535",
+        "0:01:12.459570",
+        "0:00:43.147928"
+      ]
+    }
   ]
 }
