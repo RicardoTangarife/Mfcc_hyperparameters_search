@@ -198,11 +198,11 @@ trainTimes = []
 numberEpochsRan = []
 
 
-NExp = 2161              #1              #Identificación con número de experimento
+NExp = 2757              #1              #Identificación con número de experimento
 samplerate = 22050
 longitudMaxAudio = 4
-valuesNmfcc = [30, 33, 36, 39, 42, 45] #[3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45]    #Valores de parametro a variar para el numero de coeficientes MFCC
-valuesNfft = [256, 512, 1024, 2048, 4096]    #[256, 512, 1024, 2048, 4096]  #Valores de parametro a variar para la longitud de la FFT
+valuesNmfcc = [36] #[3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45]    #Valores de parametro a variar para el numero de coeficientes MFCC
+valuesNfft = [2048, 4096]    #[256, 512, 1024, 2048, 4096]  #Valores de parametro a variar para la longitud de la FFT
 valuesWinL = [256, 512, 1024, 2048, 4096]    #[256, 512, 1024, 2048, 4096] #Valores de parametro a variar para el tamaño de ventana, este debe ser menor o igual a NFFT, la función hace padding con 0
 valuesHopL = [0.25, 0.5, 0.75, 1.0]               #[0.25, 0.5, 0.75, 1.0] #Valores de parametro a variar para el overlaping opuesto de hop_length
 valuesKernelSize = [2, 3, 5, 7]                #[2, 3, 5, 7]    #Valores de parametro de tamaño de kernel a variar dentro del modelo
@@ -217,8 +217,8 @@ for Nmfcc in valuesNmfcc:                     #Loop para variar valores del para
       else:
         continue
       for iterableNhopL in valuesHopL:            #Loop para variar valores del parametro Hop_Length => Overlaping
-        #if ((Nfft==2048 and NwinL==256 and iterableNhopL<=0.5)):
-          #continue
+        if ((Nfft==2048 and NwinL<512) or (Nfft==2048 and NwinL==512 and iterableNhopL<0.5)):
+          continue
         NhopL = int(iterableNhopL*NwinL)
         num_rows = Nmfcc
         num_columns = int(samplerate*longitudMaxAudio/NhopL) + int(samplerate*longitudMaxAudio/NhopL*0.07)  #Calculo longitud de salida de mfcc con 5% de tolerancia para longitud de audios
